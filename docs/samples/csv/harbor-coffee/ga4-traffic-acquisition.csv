@@ -1,0 +1,522 @@
+# ----------------------------------------
+# Traffic acquisition: Session source / medium
+# Property: Harbor Coffee Roasters - GA4
+# ----------------------------------------
+# Start date: 20261002
+# End date: 20261031
+
+Date,Session source / medium,Session campaign,Sessions,Engaged sessions,Total users,Key events,Purchase revenue
+20261002,(direct) / (none),(not set),128,63,113,3,98.62
+20261002,bing / organic,(not set),12,8,11,2,71.23
+20261002,blog.trailnotes.example / referral,(not set),6,3,5,0,0.00
+20261002,facebook / paid,Subscription Promo,77,41,68,2,68.07
+20261002,facebook / paid,Retargeting - Site Visitors,38,25,33,3,103.17
+20261002,facebook / paid,Reels - Roastery Story,25,18,21,0,0.00
+20261002,fb / paid,Subscription Promo,16,12,13,0,0.00
+20261002,fb / paid,Retargeting - Site Visitors,8,4,6,0,0.00
+20261002,fb / paid,Reels - Roastery Story,5,3,5,0,0.00
+20261002,google / cpc,Search - Brand,42,26,38,0,0.00
+20261002,google / cpc,Search - Coffee Beans,79,54,68,2,70.81
+20261002,google / cpc,PMax - Subscriptions,109,74,86,5,173.01
+20261002,google / organic,(not set),134,85,112,3,110.67
+20261002,ig / paid,Subscription Promo,16,10,12,0,0.00
+20261002,ig / paid,Retargeting - Site Visitors,8,5,6,0,0.00
+20261002,ig / paid,Reels - Roastery Story,5,3,4,0,0.00
+20261002,news.localdirectory.example / referral,(not set),4,1,3,0,0.00
+20261003,(direct) / (none),(not set),174,100,159,5,171.52
+20261003,bing / organic,(not set),14,7,12,0,0.00
+20261003,blog.trailnotes.example / referral,(not set),9,6,8,0,0.00
+20261003,facebook / paid,Subscription Promo,119,63,101,3,101.85
+20261003,facebook / paid,Retargeting - Site Visitors,78,43,65,2,75.08
+20261003,facebook / paid,Reels - Roastery Story,36,18,29,1,29.26
+20261003,fb / paid,Subscription Promo,26,17,20,1,33.13
+20261003,fb / paid,Retargeting - Site Visitors,17,8,14,1,35.73
+20261003,fb / paid,Reels - Roastery Story,8,5,7,0,0.00
+20261003,google / cpc,Search - Brand,54,30,47,3,118.01
+20261003,google / cpc,Search - Coffee Beans,144,86,114,4,143.11
+20261003,google / cpc,PMax - Subscriptions,132,87,108,5,165.79
+20261003,google / organic,(not set),158,110,140,1,31.57
+20261003,ig / paid,Subscription Promo,26,16,23,0,0.00
+20261003,ig / paid,Retargeting - Site Visitors,17,10,15,0,0.00
+20261003,ig / paid,Reels - Roastery Story,8,4,6,0,0.00
+20261003,news.localdirectory.example / referral,(not set),3,1,3,0,0.00
+20261004,(direct) / (none),(not set),136,82,122,1,31.44
+20261004,bing / organic,(not set),15,9,14,0,0.00
+20261004,blog.trailnotes.example / referral,(not set),7,5,6,0,0.00
+20261004,facebook / paid,Subscription Promo,77,43,69,1,31.08
+20261004,facebook / paid,Retargeting - Site Visitors,41,21,36,0,0.00
+20261004,facebook / paid,Reels - Roastery Story,31,17,28,0,0.00
+20261004,fb / paid,Subscription Promo,16,8,13,0,0.00
+20261004,fb / paid,Retargeting - Site Visitors,9,5,7,0,0.00
+20261004,fb / paid,Reels - Roastery Story,7,4,6,0,0.00
+20261004,google / cpc,Search - Brand,62,42,49,4,135.52
+20261004,google / cpc,Search - Coffee Beans,80,50,67,3,113.40
+20261004,google / cpc,PMax - Subscriptions,107,67,97,2,69.63
+20261004,google / organic,(not set),175,131,132,6,181.72
+20261004,ig / paid,Subscription Promo,16,7,13,1,35.83
+20261004,ig / paid,Retargeting - Site Visitors,9,5,7,0,0.00
+20261004,ig / paid,Reels - Roastery Story,7,2,6,0,0.00
+20261004,news.localdirectory.example / referral,(not set),5,1,4,0,0.00
+20261005,(direct) / (none),(not set),118,74,97,6,190.43
+20261005,bing / organic,(not set),12,12,9,0,0.00
+20261005,blog.trailnotes.example / referral,(not set),4,2,4,0,0.00
+20261005,facebook / paid,Subscription Promo,63,37,51,0,0.00
+20261005,facebook / paid,Retargeting - Site Visitors,37,16,28,0,0.00
+20261005,facebook / paid,Reels - Roastery Story,21,17,19,0,0.00
+20261005,fb / paid,Subscription Promo,14,11,12,0,0.00
+20261005,fb / paid,Retargeting - Site Visitors,8,7,7,0,0.00
+20261005,fb / paid,Reels - Roastery Story,4,2,3,0,0.00
+20261005,google / cpc,Search - Brand,51,29,41,2,71.64
+20261005,google / cpc,Search - Coffee Beans,88,51,72,6,211.36
+20261005,google / cpc,PMax - Subscriptions,130,79,114,7,252.61
+20261005,google / organic,(not set),142,89,115,3,111.90
+20261005,ig / paid,Subscription Promo,14,8,11,1,37.13
+20261005,ig / paid,Retargeting - Site Visitors,8,5,7,0,0.00
+20261005,ig / paid,Reels - Roastery Story,4,2,4,0,0.00
+20261005,news.localdirectory.example / referral,(not set),4,4,3,0,0.00
+20261006,(direct) / (none),(not set),128,66,109,4,138.43
+20261006,bing / organic,(not set),12,7,11,0,0.00
+20261006,blog.trailnotes.example / referral,(not set),5,3,4,0,0.00
+20261006,facebook / paid,Subscription Promo,69,35,55,0,0.00
+20261006,facebook / paid,Retargeting - Site Visitors,42,21,37,2,59.87
+20261006,facebook / paid,Reels - Roastery Story,22,9,18,0,0.00
+20261006,fb / paid,Subscription Promo,15,6,13,0,0.00
+20261006,fb / paid,Retargeting - Site Visitors,9,7,8,0,0.00
+20261006,fb / paid,Reels - Roastery Story,5,2,4,0,0.00
+20261006,google / cpc,Search - Brand,57,36,49,3,123.57
+20261006,google / cpc,Search - Coffee Beans,104,71,88,2,70.53
+20261006,google / cpc,PMax - Subscriptions,153,94,117,10,278.55
+20261006,google / organic,(not set),136,94,103,5,152.10
+20261006,ig / paid,Subscription Promo,15,7,13,0,0.00
+20261006,ig / paid,Retargeting - Site Visitors,9,3,8,0,0.00
+20261006,ig / paid,Reels - Roastery Story,5,2,5,0,0.00
+20261006,news.localdirectory.example / referral,(not set),5,3,4,0,0.00
+20261006,newsletter / email,weekly-newsletter,59,38,53,4,134.87
+20261007,(direct) / (none),(not set),112,63,88,2,65.83
+20261007,bing / organic,(not set),11,5,9,0,0.00
+20261007,blog.trailnotes.example / referral,(not set),7,6,6,0,0.00
+20261007,facebook / paid,Subscription Promo,50,28,39,1,38.00
+20261007,facebook / paid,Retargeting - Site Visitors,27,11,24,0,0.00
+20261007,facebook / paid,Reels - Roastery Story,33,19,28,0,0.00
+20261007,fb / paid,Subscription Promo,11,4,10,0,0.00
+20261007,fb / paid,Retargeting - Site Visitors,6,2,5,0,0.00
+20261007,fb / paid,Reels - Roastery Story,7,4,6,0,0.00
+20261007,google / cpc,Search - Brand,61,37,52,0,0.00
+20261007,google / cpc,Search - Coffee Beans,82,47,72,2,63.60
+20261007,google / cpc,PMax - Subscriptions,130,83,113,4,126.02
+20261007,google / organic,(not set),131,97,116,3,106.90
+20261007,ig / paid,Subscription Promo,11,6,9,0,0.00
+20261007,ig / paid,Retargeting - Site Visitors,6,3,5,0,0.00
+20261007,ig / paid,Reels - Roastery Story,7,6,5,0,0.00
+20261007,news.localdirectory.example / referral,(not set),3,2,3,0,0.00
+20261008,(direct) / (none),(not set),126,68,103,4,131.79
+20261008,bing / organic,(not set),12,8,10,0,0.00
+20261008,blog.trailnotes.example / referral,(not set),6,6,5,0,0.00
+20261008,facebook / paid,Subscription Promo,71,39,65,0,0.00
+20261008,facebook / paid,Retargeting - Site Visitors,48,26,37,0,0.00
+20261008,facebook / paid,Reels - Roastery Story,22,10,19,1,27.37
+20261008,fb / paid,Subscription Promo,15,9,11,0,0.00
+20261008,fb / paid,Retargeting - Site Visitors,10,7,9,0,0.00
+20261008,fb / paid,Reels - Roastery Story,5,2,4,0,0.00
+20261008,google / cpc,Search - Brand,42,26,33,0,0.00
+20261008,google / cpc,Search - Coffee Beans,90,48,74,3,112.40
+20261008,google / cpc,PMax - Subscriptions,105,74,80,6,204.59
+20261008,google / organic,(not set),143,95,131,2,72.92
+20261008,ig / paid,Subscription Promo,15,5,13,1,36.91
+20261008,ig / paid,Retargeting - Site Visitors,10,8,8,0,0.00
+20261008,ig / paid,Reels - Roastery Story,5,4,5,0,0.00
+20261008,news.localdirectory.example / referral,(not set),4,3,3,0,0.00
+20261009,(direct) / (none),(not set),109,57,90,7,197.33
+20261009,bing / organic,(not set),14,11,11,1,34.37
+20261009,blog.trailnotes.example / referral,(not set),4,2,3,0,0.00
+20261009,facebook / paid,Subscription Promo,75,49,60,1,39.26
+20261009,facebook / paid,Retargeting - Site Visitors,35,21,30,1,28.31
+20261009,facebook / paid,Reels - Roastery Story,26,14,24,0,0.00
+20261009,fb / paid,Subscription Promo,16,8,13,0,0.00
+20261009,fb / paid,Retargeting - Site Visitors,8,7,6,0,0.00
+20261009,fb / paid,Reels - Roastery Story,6,2,5,0,0.00
+20261009,google / cpc,Search - Brand,64,40,50,2,67.99
+20261009,google / cpc,Search - Coffee Beans,105,58,82,5,178.07
+20261009,google / cpc,PMax - Subscriptions,141,94,109,5,174.23
+20261009,google / organic,(not set),158,109,140,3,95.82
+20261009,ig / paid,Subscription Promo,16,8,12,0,0.00
+20261009,ig / paid,Retargeting - Site Visitors,8,2,7,0,0.00
+20261009,ig / paid,Reels - Roastery Story,6,3,5,0,0.00
+20261009,news.localdirectory.example / referral,(not set),3,3,3,0,0.00
+20261010,(direct) / (none),(not set),158,102,132,5,147.80
+20261010,bing / organic,(not set),14,10,11,0,0.00
+20261010,blog.trailnotes.example / referral,(not set),8,4,7,0,0.00
+20261010,facebook / paid,Subscription Promo,66,35,51,0,0.00
+20261010,facebook / paid,Retargeting - Site Visitors,53,40,45,0,0.00
+20261010,facebook / paid,Reels - Roastery Story,24,12,18,0,0.00
+20261010,fb / paid,Subscription Promo,14,7,12,0,0.00
+20261010,fb / paid,Retargeting - Site Visitors,11,4,9,0,0.00
+20261010,fb / paid,Reels - Roastery Story,5,4,4,0,0.00
+20261010,google / cpc,Search - Brand,55,37,43,1,33.96
+20261010,google / cpc,Search - Coffee Beans,111,70,84,3,120.76
+20261010,google / cpc,PMax - Subscriptions,153,86,134,6,216.99
+20261010,google / organic,(not set),159,109,125,3,103.71
+20261010,ig / paid,Subscription Promo,14,6,11,0,0.00
+20261010,ig / paid,Retargeting - Site Visitors,11,8,9,0,0.00
+20261010,ig / paid,Reels - Roastery Story,5,3,4,0,0.00
+20261010,news.localdirectory.example / referral,(not set),4,3,3,0,0.00
+20261011,(direct) / (none),(not set),166,105,140,4,128.51
+20261011,bing / organic,(not set),16,11,13,0,0.00
+20261011,blog.trailnotes.example / referral,(not set),7,6,5,0,0.00
+20261011,facebook / paid,Subscription Promo,66,38,60,2,59.64
+20261011,facebook / paid,Retargeting - Site Visitors,43,22,37,0,0.00
+20261011,facebook / paid,Reels - Roastery Story,26,11,24,1,33.88
+20261011,fb / paid,Subscription Promo,14,7,12,0,0.00
+20261011,fb / paid,Retargeting - Site Visitors,9,6,7,0,0.00
+20261011,fb / paid,Reels - Roastery Story,6,2,5,0,0.00
+20261011,google / cpc,Search - Brand,61,39,53,3,101.97
+20261011,google / cpc,Search - Coffee Beans,131,81,104,5,178.83
+20261011,google / cpc,PMax - Subscriptions,136,91,103,5,156.50
+20261011,google / organic,(not set),183,123,148,2,71.15
+20261011,ig / paid,Subscription Promo,14,6,12,0,0.00
+20261011,ig / paid,Retargeting - Site Visitors,9,5,8,1,31.04
+20261011,ig / paid,Reels - Roastery Story,6,2,5,0,0.00
+20261011,news.localdirectory.example / referral,(not set),6,3,5,0,0.00
+20261012,(direct) / (none),(not set),123,72,100,3,102.44
+20261012,bing / organic,(not set),12,7,10,0,0.00
+20261012,blog.trailnotes.example / referral,(not set),5,3,4,0,0.00
+20261012,facebook / paid,Subscription Promo,69,42,54,1,32.49
+20261012,facebook / paid,Retargeting - Site Visitors,40,21,32,0,0.00
+20261012,facebook / paid,Reels - Roastery Story,29,21,22,0,0.00
+20261012,fb / paid,Subscription Promo,15,12,12,0,0.00
+20261012,fb / paid,Retargeting - Site Visitors,9,4,7,0,0.00
+20261012,fb / paid,Reels - Roastery Story,6,1,5,1,32.30
+20261012,google / cpc,Search - Brand,53,33,49,3,100.62
+20261012,google / cpc,Search - Coffee Beans,125,74,97,3,108.41
+20261012,google / cpc,PMax - Subscriptions,114,73,104,3,92.57
+20261012,google / organic,(not set),133,82,112,3,90.89
+20261012,ig / paid,Subscription Promo,15,8,13,0,0.00
+20261012,ig / paid,Retargeting - Site Visitors,9,3,8,0,0.00
+20261012,ig / paid,Reels - Roastery Story,6,5,5,0,0.00
+20261012,news.localdirectory.example / referral,(not set),4,3,4,0,0.00
+20261013,(direct) / (none),(not set),115,60,96,2,67.49
+20261013,bing / organic,(not set),11,7,10,0,0.00
+20261013,blog.trailnotes.example / referral,(not set),6,4,5,0,0.00
+20261013,facebook / paid,Subscription Promo,60,33,50,1,35.51
+20261013,facebook / paid,Retargeting - Site Visitors,49,34,43,1,31.96
+20261013,facebook / paid,Reels - Roastery Story,27,17,22,0,0.00
+20261013,fb / paid,Subscription Promo,13,6,12,1,33.81
+20261013,fb / paid,Retargeting - Site Visitors,10,5,8,0,0.00
+20261013,fb / paid,Reels - Roastery Story,6,3,5,0,0.00
+20261013,google / cpc,Search - Brand,46,32,35,1,32.57
+20261013,google / cpc,Search - Coffee Beans,76,52,62,0,0.00
+20261013,google / cpc,PMax - Subscriptions,140,89,117,5,154.33
+20261013,google / organic,(not set),128,89,108,5,185.95
+20261013,ig / paid,Subscription Promo,13,8,11,0,0.00
+20261013,ig / paid,Retargeting - Site Visitors,10,5,8,0,0.00
+20261013,ig / paid,Reels - Roastery Story,6,3,5,0,0.00
+20261013,news.localdirectory.example / referral,(not set),2,1,2,0,0.00
+20261013,newsletter / email,weekly-newsletter,53,38,43,6,220.06
+20261014,(direct) / (none),(not set),142,81,113,4,127.96
+20261014,bing / organic,(not set),15,8,12,1,30.68
+20261014,blog.trailnotes.example / referral,(not set),9,4,7,0,0.00
+20261014,facebook / paid,Subscription Promo,55,25,49,1,34.92
+20261014,facebook / paid,Retargeting - Site Visitors,34,25,28,0,0.00
+20261014,facebook / paid,Reels - Roastery Story,35,15,29,0,0.00
+20261014,fb / paid,Subscription Promo,12,7,9,0,0.00
+20261014,fb / paid,Retargeting - Site Visitors,7,5,5,0,0.00
+20261014,fb / paid,Reels - Roastery Story,8,5,6,0,0.00
+20261014,google / cpc,Search - Brand,56,30,51,1,36.57
+20261014,google / cpc,Search - Coffee Beans,112,70,101,8,260.53
+20261014,google / cpc,PMax - Subscriptions,81,46,64,5,165.72
+20261014,google / organic,(not set),169,119,151,5,172.64
+20261014,ig / paid,Subscription Promo,12,8,10,0,0.00
+20261014,ig / paid,Retargeting - Site Visitors,7,5,6,0,0.00
+20261014,ig / paid,Reels - Roastery Story,8,7,7,0,0.00
+20261014,news.localdirectory.example / referral,(not set),4,3,3,0,0.00
+20261015,(direct) / (none),(not set),149,84,119,4,141.54
+20261015,bing / organic,(not set),14,10,11,0,0.00
+20261015,blog.trailnotes.example / referral,(not set),8,6,7,0,0.00
+20261015,facebook / paid,Subscription Promo,74,38,60,3,100.06
+20261015,facebook / paid,Retargeting - Site Visitors,29,18,23,0,0.00
+20261015,facebook / paid,Reels - Roastery Story,26,15,23,1,30.60
+20261015,fb / paid,Subscription Promo,16,10,14,0,0.00
+20261015,fb / paid,Retargeting - Site Visitors,6,3,5,0,0.00
+20261015,fb / paid,Reels - Roastery Story,6,3,5,0,0.00
+20261015,google / cpc,Search - Brand,57,40,47,2,62.06
+20261015,google / cpc,Search - Coffee Beans,71,44,61,1,36.36
+20261015,google / cpc,PMax - Subscriptions,105,65,90,6,208.61
+20261015,google / organic,(not set),158,116,137,1,37.48
+20261015,ig / paid,Subscription Promo,16,11,13,0,0.00
+20261015,ig / paid,Retargeting - Site Visitors,6,5,5,0,0.00
+20261015,ig / paid,Reels - Roastery Story,6,3,5,0,0.00
+20261015,news.localdirectory.example / referral,(not set),4,4,4,0,0.00
+20261016,(direct) / (none),(not set),114,65,104,8,250.55
+20261016,bing / organic,(not set),13,10,10,1,33.73
+20261016,blog.trailnotes.example / referral,(not set),5,1,4,0,0.00
+20261016,facebook / paid,Subscription Promo,71,46,62,1,29.88
+20261016,facebook / paid,Retargeting - Site Visitors,38,24,33,1,33.23
+20261016,facebook / paid,Reels - Roastery Story,28,14,22,0,0.00
+20261016,fb / paid,Subscription Promo,15,10,13,0,0.00
+20261016,fb / paid,Retargeting - Site Visitors,8,7,7,0,0.00
+20261016,fb / paid,Reels - Roastery Story,6,0,5,0,0.00
+20261016,google / cpc,Search - Brand,45,32,40,1,31.37
+20261016,google / cpc,Search - Coffee Beans,100,58,88,4,124.09
+20261016,google / cpc,PMax - Subscriptions,108,65,93,3,94.54
+20261016,google / organic,(not set),152,84,134,1,34.36
+20261016,ig / paid,Subscription Promo,15,9,12,0,0.00
+20261016,ig / paid,Retargeting - Site Visitors,8,3,6,1,30.50
+20261016,ig / paid,Reels - Roastery Story,6,3,5,0,0.00
+20261016,news.localdirectory.example / referral,(not set),3,2,2,0,0.00
+20261017,(direct) / (none),(not set),183,113,147,9,293.16
+20261017,bing / organic,(not set),17,10,15,0,0.00
+20261017,blog.trailnotes.example / referral,(not set),8,3,6,0,0.00
+20261017,facebook / paid,Subscription Promo,74,34,59,4,150.21
+20261017,facebook / paid,Retargeting - Site Visitors,45,21,38,1,30.93
+20261017,facebook / paid,Reels - Roastery Story,29,15,27,1,32.23
+20261017,fb / paid,Subscription Promo,16,11,15,0,0.00
+20261017,fb / paid,Retargeting - Site Visitors,10,6,8,0,0.00
+20261017,fb / paid,Reels - Roastery Story,6,4,5,1,34.65
+20261017,google / cpc,Search - Brand,57,28,46,0,0.00
+20261017,google / cpc,Search - Coffee Beans,137,92,107,5,159.95
+20261017,google / cpc,PMax - Subscriptions,167,100,133,6,219.37
+20261017,google / organic,(not set),196,136,173,6,202.93
+20261017,ig / paid,Subscription Promo,16,4,14,1,35.42
+20261017,ig / paid,Retargeting - Site Visitors,10,6,8,0,0.00
+20261017,ig / paid,Reels - Roastery Story,6,2,5,1,31.36
+20261017,news.localdirectory.example / referral,(not set),5,3,4,0,0.00
+20261018,(direct) / (none),(not set),125,74,105,7,220.70
+20261018,bing / organic,(not set),16,7,14,0,0.00
+20261018,blog.trailnotes.example / referral,(not set),7,2,6,0,0.00
+20261018,facebook / paid,Subscription Promo,76,42,63,1,31.95
+20261018,facebook / paid,Retargeting - Site Visitors,42,25,36,0,0.00
+20261018,facebook / paid,Reels - Roastery Story,29,14,23,2,79.32
+20261018,fb / paid,Subscription Promo,16,9,12,1,31.62
+20261018,fb / paid,Retargeting - Site Visitors,9,4,7,0,0.00
+20261018,fb / paid,Reels - Roastery Story,6,2,5,0,0.00
+20261018,google / cpc,Search - Brand,85,55,71,3,98.72
+20261018,google / cpc,Search - Coffee Beans,106,71,90,1,34.58
+20261018,google / cpc,PMax - Subscriptions,112,62,93,6,202.48
+20261018,google / organic,(not set),189,132,153,6,214.41
+20261018,ig / paid,Subscription Promo,16,8,13,0,0.00
+20261018,ig / paid,Retargeting - Site Visitors,9,4,7,0,0.00
+20261018,ig / paid,Reels - Roastery Story,6,4,5,1,31.83
+20261018,news.localdirectory.example / referral,(not set),4,2,3,0,0.00
+20261019,(direct) / (none),(not set),0,0,0,0,0.00
+20261019,bing / organic,(not set),0,0,0,0,0.00
+20261019,blog.trailnotes.example / referral,(not set),1,0,1,0,0.00
+20261019,facebook / paid,Subscription Promo,1,0,1,0,0.00
+20261019,facebook / paid,Retargeting - Site Visitors,1,1,1,0,0.00
+20261019,facebook / paid,Reels - Roastery Story,2,1,2,0,0.00
+20261019,fb / paid,Subscription Promo,1,0,1,0,0.00
+20261019,fb / paid,Retargeting - Site Visitors,2,1,2,0,0.00
+20261019,fb / paid,Reels - Roastery Story,1,1,1,0,0.00
+20261019,google / cpc,Search - Brand,2,2,2,1,33.17
+20261019,google / cpc,Search - Coffee Beans,1,1,1,0,0.00
+20261019,google / cpc,PMax - Subscriptions,1,1,1,0,0.00
+20261019,google / organic,(not set),1,1,1,0,0.00
+20261019,ig / paid,Subscription Promo,1,0,1,0,0.00
+20261019,ig / paid,Retargeting - Site Visitors,2,0,2,0,0.00
+20261019,ig / paid,Reels - Roastery Story,2,1,2,0,0.00
+20261019,news.localdirectory.example / referral,(not set),0,0,0,0,0.00
+20261020,(direct) / (none),(not set),0,0,0,0,0.00
+20261020,bing / organic,(not set),1,1,1,0,0.00
+20261020,blog.trailnotes.example / referral,(not set),0,0,0,0,0.00
+20261020,facebook / paid,Subscription Promo,1,0,1,0,0.00
+20261020,facebook / paid,Retargeting - Site Visitors,1,1,1,0,0.00
+20261020,facebook / paid,Reels - Roastery Story,0,0,0,0,0.00
+20261020,fb / paid,Subscription Promo,2,1,2,0,0.00
+20261020,fb / paid,Retargeting - Site Visitors,1,1,1,0,0.00
+20261020,fb / paid,Reels - Roastery Story,1,0,1,0,0.00
+20261020,google / cpc,Search - Brand,1,1,1,0,0.00
+20261020,google / cpc,Search - Coffee Beans,0,0,0,0,0.00
+20261020,google / cpc,PMax - Subscriptions,1,1,1,0,0.00
+20261020,google / organic,(not set),0,0,0,0,0.00
+20261020,ig / paid,Subscription Promo,2,0,2,0,0.00
+20261020,ig / paid,Retargeting - Site Visitors,1,0,1,0,0.00
+20261020,ig / paid,Reels - Roastery Story,2,1,2,0,0.00
+20261020,news.localdirectory.example / referral,(not set),0,0,0,0,0.00
+20261020,newsletter / email,weekly-newsletter,0,0,0,0,0.00
+20261021,(direct) / (none),(not set),1,1,1,0,0.00
+20261021,bing / organic,(not set),2,1,2,0,0.00
+20261021,blog.trailnotes.example / referral,(not set),0,0,0,0,0.00
+20261021,facebook / paid,Subscription Promo,1,1,1,0,0.00
+20261021,facebook / paid,Retargeting - Site Visitors,2,2,2,0,0.00
+20261021,facebook / paid,Reels - Roastery Story,1,0,1,0,0.00
+20261021,fb / paid,Subscription Promo,0,0,0,0,0.00
+20261021,fb / paid,Retargeting - Site Visitors,1,0,1,0,0.00
+20261021,fb / paid,Reels - Roastery Story,2,2,2,0,0.00
+20261021,google / cpc,Search - Brand,1,1,1,0,0.00
+20261021,google / cpc,Search - Coffee Beans,2,2,2,0,0.00
+20261021,google / cpc,PMax - Subscriptions,1,0,1,0,0.00
+20261021,google / organic,(not set),0,0,0,0,0.00
+20261021,ig / paid,Subscription Promo,0,0,0,0,0.00
+20261021,ig / paid,Retargeting - Site Visitors,2,1,2,0,0.00
+20261021,ig / paid,Reels - Roastery Story,0,0,0,0,0.00
+20261021,news.localdirectory.example / referral,(not set),1,0,1,0,0.00
+20261022,(direct) / (none),(not set),137,82,120,4,158.23
+20261022,bing / organic,(not set),13,8,11,0,0.00
+20261022,blog.trailnotes.example / referral,(not set),8,5,7,0,0.00
+20261022,facebook / paid,Subscription Promo,59,38,51,0,0.00
+20261022,facebook / paid,Retargeting - Site Visitors,26,17,23,0,0.00
+20261022,facebook / paid,Reels - Roastery Story,32,20,24,3,103.13
+20261022,fb / paid,Subscription Promo,13,8,11,0,0.00
+20261022,fb / paid,Retargeting - Site Visitors,6,3,5,0,0.00
+20261022,fb / paid,Reels - Roastery Story,7,3,5,0,0.00
+20261022,google / cpc,Search - Brand,47,24,36,1,35.72
+20261022,google / cpc,Search - Coffee Beans,72,38,59,2,61.67
+20261022,google / cpc,PMax - Subscriptions,166,104,151,4,146.40
+20261022,google / organic,(not set),149,113,134,3,108.43
+20261022,ig / paid,Subscription Promo,13,5,10,0,0.00
+20261022,ig / paid,Retargeting - Site Visitors,6,2,5,0,0.00
+20261022,ig / paid,Reels - Roastery Story,7,3,6,0,0.00
+20261022,news.localdirectory.example / referral,(not set),6,4,5,0,0.00
+20261023,(direct) / (none),(not set),121,65,94,0,0.00
+20261023,bing / organic,(not set),13,10,11,1,31.40
+20261023,blog.trailnotes.example / referral,(not set),8,2,7,0,0.00
+20261023,facebook / paid,Subscription Promo,74,40,58,3,99.79
+20261023,facebook / paid,Retargeting - Site Visitors,37,19,30,1,32.64
+20261023,facebook / paid,Reels - Roastery Story,31,20,27,0,0.00
+20261023,fb / paid,Subscription Promo,16,4,12,0,0.00
+20261023,fb / paid,Retargeting - Site Visitors,8,1,6,0,0.00
+20261023,fb / paid,Reels - Roastery Story,7,3,6,0,0.00
+20261023,google / cpc,Search - Brand,40,34,36,1,36.14
+20261023,google / cpc,Search - Coffee Beans,100,60,80,5,157.77
+20261023,google / cpc,PMax - Subscriptions,111,60,93,4,139.07
+20261023,google / organic,(not set),146,108,111,2,67.75
+20261023,ig / paid,Subscription Promo,16,5,13,0,0.00
+20261023,ig / paid,Retargeting - Site Visitors,8,4,6,0,0.00
+20261023,ig / paid,Reels - Roastery Story,7,4,6,0,0.00
+20261023,news.localdirectory.example / referral,(not set),4,0,3,0,0.00
+20261024,(direct) / (none),(not set),138,87,122,8,259.47
+20261024,bing / organic,(not set),14,8,12,1,33.36
+20261024,blog.trailnotes.example / referral,(not set),11,7,9,0,0.00
+20261024,facebook / paid,Subscription Promo,76,41,62,3,122.31
+20261024,facebook / paid,Retargeting - Site Visitors,55,29,47,1,37.53
+20261024,facebook / paid,Reels - Roastery Story,33,20,27,1,29.72
+20261024,fb / paid,Subscription Promo,16,6,13,0,0.00
+20261024,fb / paid,Retargeting - Site Visitors,12,4,10,1,35.98
+20261024,fb / paid,Reels - Roastery Story,7,4,5,1,39.30
+20261024,google / cpc,Search - Brand,62,36,50,3,107.07
+20261024,google / cpc,Search - Coffee Beans,126,66,97,4,123.14
+20261024,google / cpc,PMax - Subscriptions,165,104,131,7,258.68
+20261024,google / organic,(not set),159,107,144,5,177.09
+20261024,ig / paid,Subscription Promo,16,10,14,0,0.00
+20261024,ig / paid,Retargeting - Site Visitors,12,9,11,0,0.00
+20261024,ig / paid,Reels - Roastery Story,7,0,6,0,0.00
+20261024,news.localdirectory.example / referral,(not set),6,3,5,1,34.08
+20261025,(direct) / (none),(not set),138,83,114,3,106.41
+20261025,bing / organic,(not set),16,12,14,0,0.00
+20261025,blog.trailnotes.example / referral,(not set),10,3,9,0,0.00
+20261025,facebook / paid,Subscription Promo,76,34,66,1,29.03
+20261025,facebook / paid,Retargeting - Site Visitors,48,23,42,3,94.80
+20261025,facebook / paid,Reels - Roastery Story,27,12,22,1,31.87
+20261025,fb / paid,Subscription Promo,16,8,14,0,0.00
+20261025,fb / paid,Retargeting - Site Visitors,10,7,8,0,0.00
+20261025,fb / paid,Reels - Roastery Story,6,4,5,0,0.00
+20261025,google / cpc,Search - Brand,59,36,45,4,152.86
+20261025,google / cpc,Search - Coffee Beans,124,77,112,4,138.57
+20261025,google / cpc,PMax - Subscriptions,151,100,135,6,193.07
+20261025,google / organic,(not set),182,130,165,2,60.63
+20261025,ig / paid,Subscription Promo,16,8,14,0,0.00
+20261025,ig / paid,Retargeting - Site Visitors,10,6,8,0,0.00
+20261025,ig / paid,Reels - Roastery Story,6,4,5,0,0.00
+20261025,news.localdirectory.example / referral,(not set),5,2,4,0,0.00
+20261026,(direct) / (none),(not set),137,79,124,3,94.82
+20261026,bing / organic,(not set),12,10,9,0,0.00
+20261026,blog.trailnotes.example / referral,(not set),5,4,4,0,0.00
+20261026,facebook / paid,Subscription Promo,52,24,41,1,38.89
+20261026,facebook / paid,Retargeting - Site Visitors,36,22,29,0,0.00
+20261026,facebook / paid,Reels - Roastery Story,29,15,24,1,35.41
+20261026,fb / paid,Subscription Promo,11,8,9,0,0.00
+20261026,fb / paid,Retargeting - Site Visitors,8,6,7,0,0.00
+20261026,fb / paid,Reels - Roastery Story,6,5,5,0,0.00
+20261026,google / cpc,Search - Brand,55,36,48,1,36.07
+20261026,google / cpc,Search - Coffee Beans,94,65,84,1,34.29
+20261026,google / cpc,PMax - Subscriptions,133,76,102,4,135.89
+20261026,google / organic,(not set),140,90,123,4,150.95
+20261026,ig / paid,Subscription Promo,11,3,9,0,0.00
+20261026,ig / paid,Retargeting - Site Visitors,8,3,6,0,0.00
+20261026,ig / paid,Reels - Roastery Story,6,1,5,0,0.00
+20261026,news.localdirectory.example / referral,(not set),6,2,5,0,0.00
+20261027,(direct) / (none),(not set),126,72,98,6,187.13
+20261027,bing / organic,(not set),15,13,13,0,0.00
+20261027,blog.trailnotes.example / referral,(not set),7,5,6,0,0.00
+20261027,facebook / paid,Subscription Promo,44,23,36,0,0.00
+20261027,facebook / paid,Retargeting - Site Visitors,36,13,32,1,35.54
+20261027,facebook / paid,Reels - Roastery Story,27,16,21,0,0.00
+20261027,fb / paid,Subscription Promo,9,8,7,1,37.35
+20261027,fb / paid,Retargeting - Site Visitors,8,5,7,0,0.00
+20261027,fb / paid,Reels - Roastery Story,6,3,5,0,0.00
+20261027,google / cpc,Search - Brand,42,27,35,1,33.49
+20261027,google / cpc,Search - Coffee Beans,92,53,83,2,71.09
+20261027,google / cpc,PMax - Subscriptions,128,86,96,7,190.81
+20261027,google / organic,(not set),174,121,156,3,106.17
+20261027,ig / paid,Subscription Promo,9,6,8,0,0.00
+20261027,ig / paid,Retargeting - Site Visitors,8,6,7,0,0.00
+20261027,ig / paid,Reels - Roastery Story,6,1,5,0,0.00
+20261027,news.localdirectory.example / referral,(not set),5,4,5,0,0.00
+20261027,newsletter / email,weekly-newsletter,47,35,38,3,102.89
+20261028,(direct) / (none),(not set),134,78,115,5,177.76
+20261028,bing / organic,(not set),15,10,12,1,35.34
+20261028,blog.trailnotes.example / referral,(not set),6,4,5,0,0.00
+20261028,facebook / paid,Subscription Promo,78,45,71,1,34.79
+20261028,facebook / paid,Retargeting - Site Visitors,45,20,34,0,0.00
+20261028,facebook / paid,Reels - Roastery Story,27,15,22,1,31.89
+20261028,fb / paid,Subscription Promo,17,7,15,0,0.00
+20261028,fb / paid,Retargeting - Site Visitors,10,6,8,0,0.00
+20261028,fb / paid,Reels - Roastery Story,6,4,5,0,0.00
+20261028,google / cpc,Search - Brand,58,35,45,2,70.97
+20261028,google / cpc,Search - Coffee Beans,96,61,73,9,355.12
+20261028,google / cpc,PMax - Subscriptions,159,99,122,9,315.54
+20261028,google / organic,(not set),171,115,129,6,188.02
+20261028,ig / paid,Subscription Promo,17,10,13,0,0.00
+20261028,ig / paid,Retargeting - Site Visitors,10,5,9,0,0.00
+20261028,ig / paid,Reels - Roastery Story,6,5,5,0,0.00
+20261028,news.localdirectory.example / referral,(not set),4,3,3,0,0.00
+20261029,(direct) / (none),(not set),112,63,100,2,68.44
+20261029,bing / organic,(not set),14,9,11,0,0.00
+20261029,blog.trailnotes.example / referral,(not set),5,2,4,0,0.00
+20261029,facebook / paid,Subscription Promo,73,41,55,1,35.06
+20261029,facebook / paid,Retargeting - Site Visitors,48,24,39,0,0.00
+20261029,facebook / paid,Reels - Roastery Story,20,9,17,1,34.91
+20261029,fb / paid,Subscription Promo,16,7,14,1,32.89
+20261029,fb / paid,Retargeting - Site Visitors,10,5,8,0,0.00
+20261029,fb / paid,Reels - Roastery Story,4,2,3,0,0.00
+20261029,google / cpc,Search - Brand,49,29,39,2,62.98
+20261029,google / cpc,Search - Coffee Beans,84,53,66,2,66.41
+20261029,google / cpc,PMax - Subscriptions,150,97,124,10,332.61
+20261029,google / organic,(not set),156,111,123,1,37.12
+20261029,ig / paid,Subscription Promo,16,10,13,1,36.47
+20261029,ig / paid,Retargeting - Site Visitors,10,4,8,0,0.00
+20261029,ig / paid,Reels - Roastery Story,4,2,3,0,0.00
+20261029,news.localdirectory.example / referral,(not set),5,3,4,0,0.00
+20261030,(direct) / (none),(not set),144,83,128,11,373.00
+20261030,bing / organic,(not set),16,9,14,1,32.40
+20261030,blog.trailnotes.example / referral,(not set),6,4,5,0,0.00
+20261030,facebook / paid,Subscription Promo,67,38,55,0,0.00
+20261030,facebook / paid,Retargeting - Site Visitors,43,28,34,0,0.00
+20261030,facebook / paid,Reels - Roastery Story,24,13,22,0,0.00
+20261030,fb / paid,Subscription Promo,14,8,11,1,35.61
+20261030,fb / paid,Retargeting - Site Visitors,9,4,7,0,0.00
+20261030,fb / paid,Reels - Roastery Story,5,1,4,0,0.00
+20261030,google / cpc,Search - Brand,63,44,54,0,0.00
+20261030,google / cpc,Search - Coffee Beans,85,52,74,4,141.53
+20261030,google / cpc,PMax - Subscriptions,108,61,90,5,167.40
+20261030,google / organic,(not set),187,128,166,1,34.60
+20261030,ig / paid,Subscription Promo,14,6,12,1,34.03
+20261030,ig / paid,Retargeting - Site Visitors,9,5,8,0,0.00
+20261030,ig / paid,Reels - Roastery Story,5,2,4,0,0.00
+20261030,news.localdirectory.example / referral,(not set),4,1,3,0,0.00
+20261031,(direct) / (none),(not set),164,93,138,8,255.08
+20261031,bing / organic,(not set),16,10,14,0,0.00
+20261031,blog.trailnotes.example / referral,(not set),7,4,6,0,0.00
+20261031,facebook / paid,Subscription Promo,66,34,50,1,30.96
+20261031,facebook / paid,Retargeting - Site Visitors,40,20,33,1,31.23
+20261031,facebook / paid,Reels - Roastery Story,28,13,22,1,33.66
+20261031,fb / paid,Subscription Promo,14,7,11,0,0.00
+20261031,fb / paid,Retargeting - Site Visitors,9,6,8,0,0.00
+20261031,fb / paid,Reels - Roastery Story,6,4,5,0,0.00
+20261031,google / cpc,Search - Brand,49,33,41,4,137.06
+20261031,google / cpc,Search - Coffee Beans,108,69,95,6,210.30
+20261031,google / cpc,PMax - Subscriptions,147,93,113,3,126.22
+20261031,google / organic,(not set),180,116,157,3,102.30
+20261031,ig / paid,Subscription Promo,14,6,11,0,0.00
+20261031,ig / paid,Retargeting - Site Visitors,9,5,8,0,0.00
+20261031,ig / paid,Reels - Roastery Story,6,1,5,0,0.00
+20261031,news.localdirectory.example / referral,(not set),7,3,6,0,0.00

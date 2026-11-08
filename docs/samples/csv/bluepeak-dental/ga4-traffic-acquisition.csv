@@ -1,0 +1,462 @@
+# ----------------------------------------
+# Traffic acquisition: Session source / medium
+# Property: BluePeak Dental Group - GA4
+# ----------------------------------------
+# Start date: 20261002
+# End date: 20261031
+
+Date,Session source / medium,Session campaign,Sessions,Engaged sessions,Total users,Key events,Purchase revenue
+20261002,(direct) / (none),(not set),90,53,79,3,0.00
+20261002,bing / organic,(not set),11,8,9,0,0.00
+20261002,blog.trailnotes.example / referral,(not set),2,1,2,0,0.00
+20261002,facebook / paid,Leads - Teeth Whitening Offer,25,17,21,0,0.00
+20261002,facebook / paid,Leads - Free Consultation,24,14,19,2,0.00
+20261002,fb / paid,Leads - Teeth Whitening Offer,5,4,4,0,0.00
+20261002,fb / paid,Leads - Free Consultation,5,3,4,0,0.00
+20261002,google / cpc,Search - Brand,1,1,1,0,0.00
+20261002,google / cpc,Search - Emergency Dentist,3,2,3,0,0.00
+20261002,google / cpc,Search - Invisalign,2,2,2,1,0.00
+20261002,google / cpc,PMax - New Patients,2,0,2,1,0.00
+20261002,google / organic,(not set),123,87,104,1,0.00
+20261002,ig / paid,Leads - Teeth Whitening Offer,5,4,4,0,0.00
+20261002,ig / paid,Leads - Free Consultation,5,3,5,0,0.00
+20261002,news.localdirectory.example / referral,(not set),2,2,2,0,0.00
+20261003,(direct) / (none),(not set),64,36,50,3,0.00
+20261003,bing / organic,(not set),6,5,5,0,0.00
+20261003,blog.trailnotes.example / referral,(not set),2,0,2,0,0.00
+20261003,facebook / paid,Leads - Teeth Whitening Offer,18,12,14,0,0.00
+20261003,facebook / paid,Leads - Free Consultation,16,10,14,0,0.00
+20261003,fb / paid,Leads - Teeth Whitening Offer,4,2,3,0,0.00
+20261003,fb / paid,Leads - Free Consultation,3,2,3,0,0.00
+20261003,google / cpc,Search - Brand,1,0,1,0,0.00
+20261003,google / cpc,Search - Emergency Dentist,2,2,2,0,0.00
+20261003,google / cpc,Search - Invisalign,2,2,2,0,0.00
+20261003,google / cpc,PMax - New Patients,1,1,1,0,0.00
+20261003,google / organic,(not set),68,49,61,1,0.00
+20261003,ig / paid,Leads - Teeth Whitening Offer,4,2,4,0,0.00
+20261003,ig / paid,Leads - Free Consultation,3,1,3,0,0.00
+20261003,news.localdirectory.example / referral,(not set),2,2,2,0,0.00
+20261004,(direct) / (none),(not set),64,36,51,2,0.00
+20261004,bing / organic,(not set),6,3,5,0,0.00
+20261004,blog.trailnotes.example / referral,(not set),2,1,2,0,0.00
+20261004,facebook / paid,Leads - Teeth Whitening Offer,24,12,20,0,0.00
+20261004,facebook / paid,Leads - Free Consultation,15,12,12,0,0.00
+20261004,fb / paid,Leads - Teeth Whitening Offer,5,4,4,0,0.00
+20261004,fb / paid,Leads - Free Consultation,3,1,2,0,0.00
+20261004,google / cpc,Search - Brand,1,1,1,0,0.00
+20261004,google / cpc,Search - Emergency Dentist,2,1,2,0,0.00
+20261004,google / cpc,Search - Invisalign,2,1,2,0,0.00
+20261004,google / cpc,PMax - New Patients,1,1,1,0,0.00
+20261004,google / organic,(not set),74,42,56,2,0.00
+20261004,ig / paid,Leads - Teeth Whitening Offer,5,3,4,0,0.00
+20261004,ig / paid,Leads - Free Consultation,3,1,2,0,0.00
+20261004,news.localdirectory.example / referral,(not set),1,1,1,1,0.00
+20261005,(direct) / (none),(not set),108,55,86,2,0.00
+20261005,bing / organic,(not set),9,4,7,0,0.00
+20261005,blog.trailnotes.example / referral,(not set),4,3,4,0,0.00
+20261005,facebook / paid,Leads - Teeth Whitening Offer,24,17,21,1,0.00
+20261005,facebook / paid,Leads - Free Consultation,27,16,23,0,0.00
+20261005,fb / paid,Leads - Teeth Whitening Offer,5,3,4,0,0.00
+20261005,fb / paid,Leads - Free Consultation,6,4,5,0,0.00
+20261005,google / cpc,Search - Brand,1,1,1,0,0.00
+20261005,google / cpc,Search - Emergency Dentist,3,2,3,0,0.00
+20261005,google / cpc,Search - Invisalign,3,1,2,0,0.00
+20261005,google / cpc,PMax - New Patients,3,3,3,0,0.00
+20261005,google / organic,(not set),104,68,87,2,0.00
+20261005,ig / paid,Leads - Teeth Whitening Offer,5,2,4,0,0.00
+20261005,ig / paid,Leads - Free Consultation,6,3,5,0,0.00
+20261005,news.localdirectory.example / referral,(not set),2,1,2,0,0.00
+20261006,(direct) / (none),(not set),90,43,68,6,0.00
+20261006,bing / organic,(not set),10,5,8,0,0.00
+20261006,blog.trailnotes.example / referral,(not set),3,1,3,0,0.00
+20261006,facebook / paid,Leads - Teeth Whitening Offer,35,19,31,1,0.00
+20261006,facebook / paid,Leads - Free Consultation,21,17,17,0,0.00
+20261006,fb / paid,Leads - Teeth Whitening Offer,8,3,7,1,0.00
+20261006,fb / paid,Leads - Free Consultation,4,2,3,0,0.00
+20261006,google / cpc,Search - Brand,2,1,2,0,0.00
+20261006,google / cpc,Search - Emergency Dentist,3,3,3,1,0.00
+20261006,google / cpc,Search - Invisalign,2,0,2,1,0.00
+20261006,google / cpc,PMax - New Patients,3,1,3,0,0.00
+20261006,google / organic,(not set),110,76,93,2,0.00
+20261006,ig / paid,Leads - Teeth Whitening Offer,8,4,6,0,0.00
+20261006,ig / paid,Leads - Free Consultation,4,4,3,0,0.00
+20261006,news.localdirectory.example / referral,(not set),2,2,2,0,0.00
+20261006,newsletter / email,weekly-newsletter,43,30,39,4,0.00
+20261007,(direct) / (none),(not set),108,68,86,1,0.00
+20261007,bing / organic,(not set),10,6,9,0,0.00
+20261007,blog.trailnotes.example / referral,(not set),5,3,4,0,0.00
+20261007,facebook / paid,Leads - Teeth Whitening Offer,29,16,22,1,0.00
+20261007,facebook / paid,Leads - Free Consultation,23,12,18,0,0.00
+20261007,fb / paid,Leads - Teeth Whitening Offer,6,4,5,0,0.00
+20261007,fb / paid,Leads - Free Consultation,5,4,4,0,0.00
+20261007,google / cpc,Search - Brand,2,2,2,0,0.00
+20261007,google / cpc,Search - Emergency Dentist,3,1,2,1,0.00
+20261007,google / cpc,Search - Invisalign,3,1,2,0,0.00
+20261007,google / cpc,PMax - New Patients,3,2,2,0,0.00
+20261007,google / organic,(not set),116,78,106,2,0.00
+20261007,ig / paid,Leads - Teeth Whitening Offer,6,2,5,0,0.00
+20261007,ig / paid,Leads - Free Consultation,5,3,4,0,0.00
+20261007,news.localdirectory.example / referral,(not set),3,3,2,0,0.00
+20261008,(direct) / (none),(not set),98,60,84,6,0.00
+20261008,bing / organic,(not set),11,7,9,1,0.00
+20261008,blog.trailnotes.example / referral,(not set),4,1,3,0,0.00
+20261008,facebook / paid,Leads - Teeth Whitening Offer,38,19,32,0,0.00
+20261008,facebook / paid,Leads - Free Consultation,29,20,24,0,0.00
+20261008,fb / paid,Leads - Teeth Whitening Offer,8,5,6,0,0.00
+20261008,fb / paid,Leads - Free Consultation,6,2,5,0,0.00
+20261008,google / cpc,Search - Brand,2,1,2,0,0.00
+20261008,google / cpc,Search - Emergency Dentist,3,3,3,1,0.00
+20261008,google / cpc,Search - Invisalign,4,3,3,0,0.00
+20261008,google / cpc,PMax - New Patients,3,1,2,0,0.00
+20261008,google / organic,(not set),128,89,114,4,0.00
+20261008,ig / paid,Leads - Teeth Whitening Offer,8,7,6,0,0.00
+20261008,ig / paid,Leads - Free Consultation,6,4,5,0,0.00
+20261008,news.localdirectory.example / referral,(not set),3,2,3,0,0.00
+20261009,(direct) / (none),(not set),103,55,91,6,0.00
+20261009,bing / organic,(not set),10,6,9,0,0.00
+20261009,blog.trailnotes.example / referral,(not set),4,4,3,0,0.00
+20261009,facebook / paid,Leads - Teeth Whitening Offer,22,17,19,0,0.00
+20261009,facebook / paid,Leads - Free Consultation,15,9,14,0,0.00
+20261009,fb / paid,Leads - Teeth Whitening Offer,5,3,4,0,0.00
+20261009,fb / paid,Leads - Free Consultation,3,1,2,0,0.00
+20261009,google / cpc,Search - Brand,2,1,2,1,0.00
+20261009,google / cpc,Search - Emergency Dentist,4,2,4,0,0.00
+20261009,google / cpc,Search - Invisalign,5,5,5,1,0.00
+20261009,google / cpc,PMax - New Patients,3,1,2,1,0.00
+20261009,google / organic,(not set),120,89,98,1,0.00
+20261009,ig / paid,Leads - Teeth Whitening Offer,5,4,4,0,0.00
+20261009,ig / paid,Leads - Free Consultation,3,0,2,0,0.00
+20261009,news.localdirectory.example / referral,(not set),2,0,2,0,0.00
+20261010,(direct) / (none),(not set),65,41,56,2,0.00
+20261010,bing / organic,(not set),7,5,6,0,0.00
+20261010,blog.trailnotes.example / referral,(not set),2,1,2,0,0.00
+20261010,facebook / paid,Leads - Teeth Whitening Offer,22,14,19,0,0.00
+20261010,facebook / paid,Leads - Free Consultation,22,11,17,1,0.00
+20261010,fb / paid,Leads - Teeth Whitening Offer,5,5,4,0,0.00
+20261010,fb / paid,Leads - Free Consultation,5,2,4,0,0.00
+20261010,google / cpc,Search - Brand,1,0,1,0,0.00
+20261010,google / cpc,Search - Emergency Dentist,2,2,2,0,0.00
+20261010,google / cpc,Search - Invisalign,1,0,1,0,0.00
+20261010,google / cpc,PMax - New Patients,1,1,1,0,0.00
+20261010,google / organic,(not set),80,58,64,2,0.00
+20261010,ig / paid,Leads - Teeth Whitening Offer,5,3,4,0,0.00
+20261010,ig / paid,Leads - Free Consultation,5,3,4,0,0.00
+20261010,news.localdirectory.example / referral,(not set),2,1,2,0,0.00
+20261011,(direct) / (none),(not set),58,30,46,2,0.00
+20261011,bing / organic,(not set),6,5,5,0,0.00
+20261011,blog.trailnotes.example / referral,(not set),2,1,2,1,0.00
+20261011,facebook / paid,Leads - Teeth Whitening Offer,14,8,12,1,0.00
+20261011,facebook / paid,Leads - Free Consultation,18,11,16,1,0.00
+20261011,fb / paid,Leads - Teeth Whitening Offer,3,0,3,0,0.00
+20261011,fb / paid,Leads - Free Consultation,4,1,3,0,0.00
+20261011,google / cpc,Search - Brand,1,0,1,0,0.00
+20261011,google / cpc,Search - Emergency Dentist,2,0,2,0,0.00
+20261011,google / cpc,Search - Invisalign,1,1,1,0,0.00
+20261011,google / cpc,PMax - New Patients,2,2,2,0,0.00
+20261011,google / organic,(not set),65,45,53,3,0.00
+20261011,ig / paid,Leads - Teeth Whitening Offer,3,3,2,0,0.00
+20261011,ig / paid,Leads - Free Consultation,4,1,3,0,0.00
+20261011,news.localdirectory.example / referral,(not set),2,1,2,0,0.00
+20261012,(direct) / (none),(not set),97,58,76,5,0.00
+20261012,bing / organic,(not set),9,6,7,0,0.00
+20261012,blog.trailnotes.example / referral,(not set),3,0,3,0,0.00
+20261012,facebook / paid,Leads - Teeth Whitening Offer,19,8,14,1,0.00
+20261012,facebook / paid,Leads - Free Consultation,19,10,16,1,0.00
+20261012,fb / paid,Leads - Teeth Whitening Offer,4,2,3,0,0.00
+20261012,fb / paid,Leads - Free Consultation,4,3,3,0,0.00
+20261012,google / cpc,Search - Brand,2,2,2,0,0.00
+20261012,google / cpc,Search - Emergency Dentist,3,3,3,0,0.00
+20261012,google / cpc,Search - Invisalign,3,2,3,0,0.00
+20261012,google / cpc,PMax - New Patients,2,2,2,0,0.00
+20261012,google / organic,(not set),99,66,88,4,0.00
+20261012,ig / paid,Leads - Teeth Whitening Offer,4,1,3,0,0.00
+20261012,ig / paid,Leads - Free Consultation,4,2,3,1,0.00
+20261012,news.localdirectory.example / referral,(not set),2,2,2,0,0.00
+20261013,(direct) / (none),(not set),105,59,83,2,0.00
+20261013,bing / organic,(not set),10,7,8,0,0.00
+20261013,blog.trailnotes.example / referral,(not set),2,1,2,1,0.00
+20261013,facebook / paid,Leads - Teeth Whitening Offer,23,13,18,0,0.00
+20261013,facebook / paid,Leads - Free Consultation,26,12,24,0,0.00
+20261013,fb / paid,Leads - Teeth Whitening Offer,5,2,4,0,0.00
+20261013,fb / paid,Leads - Free Consultation,6,3,5,0,0.00
+20261013,google / cpc,Search - Brand,1,1,1,0,0.00
+20261013,google / cpc,Search - Emergency Dentist,3,3,3,0,0.00
+20261013,google / cpc,Search - Invisalign,3,2,2,0,0.00
+20261013,google / cpc,PMax - New Patients,2,2,2,0,0.00
+20261013,google / organic,(not set),112,74,102,6,0.00
+20261013,ig / paid,Leads - Teeth Whitening Offer,5,1,4,0,0.00
+20261013,ig / paid,Leads - Free Consultation,6,1,5,0,0.00
+20261013,news.localdirectory.example / referral,(not set),2,2,2,0,0.00
+20261013,newsletter / email,weekly-newsletter,50,37,44,0,0.00
+20261014,(direct) / (none),(not set),103,57,78,3,0.00
+20261014,bing / organic,(not set),9,2,8,0,0.00
+20261014,blog.trailnotes.example / referral,(not set),4,4,4,0,0.00
+20261014,facebook / paid,Leads - Teeth Whitening Offer,21,10,16,0,0.00
+20261014,facebook / paid,Leads - Free Consultation,20,10,16,0,0.00
+20261014,fb / paid,Leads - Teeth Whitening Offer,4,3,3,0,0.00
+20261014,fb / paid,Leads - Free Consultation,4,0,3,0,0.00
+20261014,google / cpc,Search - Brand,2,1,2,0,0.00
+20261014,google / cpc,Search - Emergency Dentist,3,3,2,0,0.00
+20261014,google / cpc,Search - Invisalign,3,3,3,0,0.00
+20261014,google / cpc,PMax - New Patients,3,2,3,0,0.00
+20261014,google / organic,(not set),99,64,90,2,0.00
+20261014,ig / paid,Leads - Teeth Whitening Offer,4,0,3,0,0.00
+20261014,ig / paid,Leads - Free Consultation,4,3,3,0,0.00
+20261014,news.localdirectory.example / referral,(not set),2,0,2,0,0.00
+20261015,(direct) / (none),(not set),107,70,85,1,0.00
+20261015,bing / organic,(not set),10,6,8,0,0.00
+20261015,blog.trailnotes.example / referral,(not set),5,2,5,0,0.00
+20261015,facebook / paid,Leads - Teeth Whitening Offer,23,14,20,1,0.00
+20261015,facebook / paid,Leads - Free Consultation,18,14,15,0,0.00
+20261015,fb / paid,Leads - Teeth Whitening Offer,5,3,4,0,0.00
+20261015,fb / paid,Leads - Free Consultation,4,3,3,0,0.00
+20261015,google / cpc,Search - Brand,1,1,1,0,0.00
+20261015,google / cpc,Search - Emergency Dentist,3,2,2,1,0.00
+20261015,google / cpc,Search - Invisalign,3,1,3,0,0.00
+20261015,google / cpc,PMax - New Patients,2,0,2,0,0.00
+20261015,google / organic,(not set),116,79,105,2,0.00
+20261015,ig / paid,Leads - Teeth Whitening Offer,5,2,4,0,0.00
+20261015,ig / paid,Leads - Free Consultation,4,4,3,0,0.00
+20261015,news.localdirectory.example / referral,(not set),3,1,3,0,0.00
+20261016,(direct) / (none),(not set),96,54,83,2,0.00
+20261016,bing / organic,(not set),11,10,9,0,0.00
+20261016,blog.trailnotes.example / referral,(not set),3,1,3,0,0.00
+20261016,facebook / paid,Leads - Teeth Whitening Offer,27,15,23,0,0.00
+20261016,facebook / paid,Leads - Free Consultation,19,8,17,0,0.00
+20261016,fb / paid,Leads - Teeth Whitening Offer,6,3,5,1,0.00
+20261016,fb / paid,Leads - Free Consultation,4,3,3,0,0.00
+20261016,google / cpc,Search - Brand,1,1,1,0,0.00
+20261016,google / cpc,Search - Emergency Dentist,3,3,2,0,0.00
+20261016,google / cpc,Search - Invisalign,2,1,2,1,0.00
+20261016,google / cpc,PMax - New Patients,2,1,2,0,0.00
+20261016,google / organic,(not set),126,74,114,1,0.00
+20261016,ig / paid,Leads - Teeth Whitening Offer,6,5,5,0,0.00
+20261016,ig / paid,Leads - Free Consultation,4,3,3,1,0.00
+20261016,news.localdirectory.example / referral,(not set),2,1,2,0,0.00
+20261017,(direct) / (none),(not set),68,33,60,3,0.00
+20261017,bing / organic,(not set),6,4,5,0,0.00
+20261017,blog.trailnotes.example / referral,(not set),2,2,2,0,0.00
+20261017,facebook / paid,Leads - Teeth Whitening Offer,14,8,12,0,0.00
+20261017,facebook / paid,Leads - Free Consultation,14,8,13,0,0.00
+20261017,fb / paid,Leads - Teeth Whitening Offer,3,2,3,1,0.00
+20261017,fb / paid,Leads - Free Consultation,3,3,2,0,0.00
+20261017,google / cpc,Search - Brand,1,1,1,0,0.00
+20261017,google / cpc,Search - Emergency Dentist,3,2,2,0,0.00
+20261017,google / cpc,Search - Invisalign,2,1,2,0,0.00
+20261017,google / cpc,PMax - New Patients,2,1,2,1,0.00
+20261017,google / organic,(not set),71,38,65,1,0.00
+20261017,ig / paid,Leads - Teeth Whitening Offer,3,1,2,0,0.00
+20261017,ig / paid,Leads - Free Consultation,3,2,3,0,0.00
+20261017,news.localdirectory.example / referral,(not set),2,2,2,0,0.00
+20261018,(direct) / (none),(not set),73,50,60,3,0.00
+20261018,bing / organic,(not set),6,5,5,0,0.00
+20261018,blog.trailnotes.example / referral,(not set),2,2,2,0,0.00
+20261018,facebook / paid,Leads - Teeth Whitening Offer,18,9,14,0,0.00
+20261018,facebook / paid,Leads - Free Consultation,16,9,12,1,0.00
+20261018,fb / paid,Leads - Teeth Whitening Offer,4,2,3,0,0.00
+20261018,fb / paid,Leads - Free Consultation,3,2,3,0,0.00
+20261018,google / cpc,Search - Brand,1,0,1,0,0.00
+20261018,google / cpc,Search - Emergency Dentist,2,0,2,0,0.00
+20261018,google / cpc,Search - Invisalign,1,1,1,0,0.00
+20261018,google / cpc,PMax - New Patients,1,1,1,0,0.00
+20261018,google / organic,(not set),66,44,57,3,0.00
+20261018,ig / paid,Leads - Teeth Whitening Offer,4,3,3,0,0.00
+20261018,ig / paid,Leads - Free Consultation,3,3,3,0,0.00
+20261018,news.localdirectory.example / referral,(not set),2,1,2,0,0.00
+20261019,(direct) / (none),(not set),115,73,91,6,0.00
+20261019,bing / organic,(not set),9,7,7,0,0.00
+20261019,blog.trailnotes.example / referral,(not set),5,1,4,0,0.00
+20261019,facebook / paid,Leads - Teeth Whitening Offer,26,12,23,0,0.00
+20261019,facebook / paid,Leads - Free Consultation,23,13,19,1,0.00
+20261019,fb / paid,Leads - Teeth Whitening Offer,6,4,5,0,0.00
+20261019,fb / paid,Leads - Free Consultation,5,5,4,0,0.00
+20261019,google / cpc,Search - Brand,2,1,2,0,0.00
+20261019,google / cpc,Search - Emergency Dentist,3,2,2,0,0.00
+20261019,google / cpc,Search - Invisalign,3,1,2,1,0.00
+20261019,google / cpc,PMax - New Patients,2,2,2,0,0.00
+20261019,google / organic,(not set),98,64,82,2,0.00
+20261019,ig / paid,Leads - Teeth Whitening Offer,6,4,5,0,0.00
+20261019,ig / paid,Leads - Free Consultation,5,5,4,0,0.00
+20261019,news.localdirectory.example / referral,(not set),2,2,2,0,0.00
+20261020,(direct) / (none),(not set),96,57,85,5,0.00
+20261020,bing / organic,(not set),10,5,9,0,0.00
+20261020,blog.trailnotes.example / referral,(not set),3,1,3,1,0.00
+20261020,facebook / paid,Leads - Teeth Whitening Offer,31,12,24,1,0.00
+20261020,facebook / paid,Leads - Free Consultation,22,12,18,0,0.00
+20261020,fb / paid,Leads - Teeth Whitening Offer,7,4,6,0,0.00
+20261020,fb / paid,Leads - Free Consultation,5,3,4,0,0.00
+20261020,google / cpc,Search - Brand,1,0,1,0,0.00
+20261020,google / cpc,Search - Emergency Dentist,3,2,2,0,0.00
+20261020,google / cpc,Search - Invisalign,3,2,2,0,0.00
+20261020,google / cpc,PMax - New Patients,2,1,2,0,0.00
+20261020,google / organic,(not set),110,74,100,4,0.00
+20261020,ig / paid,Leads - Teeth Whitening Offer,7,5,6,0,0.00
+20261020,ig / paid,Leads - Free Consultation,5,2,4,1,0.00
+20261020,news.localdirectory.example / referral,(not set),2,1,2,0,0.00
+20261020,newsletter / email,weekly-newsletter,38,24,35,1,0.00
+20261021,(direct) / (none),(not set),104,61,93,1,0.00
+20261021,bing / organic,(not set),9,7,8,0,0.00
+20261021,blog.trailnotes.example / referral,(not set),4,1,4,1,0.00
+20261021,facebook / paid,Leads - Teeth Whitening Offer,43,24,37,0,0.00
+20261021,facebook / paid,Leads - Free Consultation,30,19,27,1,0.00
+20261021,fb / paid,Leads - Teeth Whitening Offer,9,7,8,0,0.00
+20261021,fb / paid,Leads - Free Consultation,6,2,5,0,0.00
+20261021,google / cpc,Search - Brand,1,1,1,0,0.00
+20261021,google / cpc,Search - Emergency Dentist,3,1,3,1,0.00
+20261021,google / cpc,Search - Invisalign,3,0,2,0,0.00
+20261021,google / cpc,PMax - New Patients,2,1,2,0,0.00
+20261021,google / organic,(not set),100,71,77,2,0.00
+20261021,ig / paid,Leads - Teeth Whitening Offer,9,4,8,0,0.00
+20261021,ig / paid,Leads - Free Consultation,6,5,5,0,0.00
+20261021,news.localdirectory.example / referral,(not set),2,1,2,0,0.00
+20261022,(direct) / (none),(not set),100,56,78,2,0.00
+20261022,bing / organic,(not set),10,9,9,1,0.00
+20261022,blog.trailnotes.example / referral,(not set),3,2,2,0,0.00
+20261022,facebook / paid,Leads - Teeth Whitening Offer,27,17,25,1,0.00
+20261022,facebook / paid,Leads - Free Consultation,22,14,18,2,0.00
+20261022,fb / paid,Leads - Teeth Whitening Offer,6,3,5,0,0.00
+20261022,fb / paid,Leads - Free Consultation,5,1,4,0,0.00
+20261022,google / cpc,Search - Brand,1,1,1,0,0.00
+20261022,google / cpc,Search - Emergency Dentist,4,4,4,2,0.00
+20261022,google / cpc,Search - Invisalign,3,2,2,0,0.00
+20261022,google / cpc,PMax - New Patients,3,3,3,0,0.00
+20261022,google / organic,(not set),119,85,92,1,0.00
+20261022,ig / paid,Leads - Teeth Whitening Offer,6,2,5,0,0.00
+20261022,ig / paid,Leads - Free Consultation,5,4,4,0,0.00
+20261022,news.localdirectory.example / referral,(not set),2,0,2,0,0.00
+20261023,(direct) / (none),(not set),102,57,91,3,0.00
+20261023,bing / organic,(not set),10,8,9,0,0.00
+20261023,blog.trailnotes.example / referral,(not set),3,2,3,0,0.00
+20261023,facebook / paid,Leads - Teeth Whitening Offer,26,13,21,0,0.00
+20261023,facebook / paid,Leads - Free Consultation,26,14,22,0,0.00
+20261023,fb / paid,Leads - Teeth Whitening Offer,6,3,5,0,0.00
+20261023,fb / paid,Leads - Free Consultation,6,3,5,0,0.00
+20261023,google / cpc,Search - Brand,2,1,2,0,0.00
+20261023,google / cpc,Search - Emergency Dentist,3,1,3,0,0.00
+20261023,google / cpc,Search - Invisalign,3,1,2,0,0.00
+20261023,google / cpc,PMax - New Patients,3,2,3,0,0.00
+20261023,google / organic,(not set),113,72,103,2,0.00
+20261023,ig / paid,Leads - Teeth Whitening Offer,6,2,5,0,0.00
+20261023,ig / paid,Leads - Free Consultation,6,3,5,0,0.00
+20261023,news.localdirectory.example / referral,(not set),2,1,2,0,0.00
+20261024,(direct) / (none),(not set),81,44,69,5,0.00
+20261024,bing / organic,(not set),8,8,7,0,0.00
+20261024,blog.trailnotes.example / referral,(not set),3,2,2,0,0.00
+20261024,facebook / paid,Leads - Teeth Whitening Offer,17,7,13,0,0.00
+20261024,facebook / paid,Leads - Free Consultation,18,11,15,1,0.00
+20261024,fb / paid,Leads - Teeth Whitening Offer,4,3,3,0,0.00
+20261024,fb / paid,Leads - Free Consultation,4,1,3,1,0.00
+20261024,google / cpc,Search - Brand,1,1,1,0,0.00
+20261024,google / cpc,Search - Emergency Dentist,3,1,2,2,0.00
+20261024,google / cpc,Search - Invisalign,2,2,2,0,0.00
+20261024,google / cpc,PMax - New Patients,2,2,2,0,0.00
+20261024,google / organic,(not set),93,67,73,1,0.00
+20261024,ig / paid,Leads - Teeth Whitening Offer,4,2,3,0,0.00
+20261024,ig / paid,Leads - Free Consultation,4,3,4,0,0.00
+20261024,news.localdirectory.example / referral,(not set),2,0,2,0,0.00
+20261025,(direct) / (none),(not set),70,46,58,2,0.00
+20261025,bing / organic,(not set),5,5,4,0,0.00
+20261025,blog.trailnotes.example / referral,(not set),3,2,3,0,0.00
+20261025,facebook / paid,Leads - Teeth Whitening Offer,27,13,24,0,0.00
+20261025,facebook / paid,Leads - Free Consultation,19,10,16,0,0.00
+20261025,fb / paid,Leads - Teeth Whitening Offer,6,1,5,0,0.00
+20261025,fb / paid,Leads - Free Consultation,4,2,3,0,0.00
+20261025,google / cpc,Search - Brand,1,1,1,0,0.00
+20261025,google / cpc,Search - Emergency Dentist,2,2,2,0,0.00
+20261025,google / cpc,Search - Invisalign,1,0,1,0,0.00
+20261025,google / cpc,PMax - New Patients,1,1,1,0,0.00
+20261025,google / organic,(not set),54,40,42,1,0.00
+20261025,ig / paid,Leads - Teeth Whitening Offer,6,3,5,0,0.00
+20261025,ig / paid,Leads - Free Consultation,4,2,3,0,0.00
+20261025,news.localdirectory.example / referral,(not set),1,0,1,0,0.00
+20261026,(direct) / (none),(not set),102,63,93,0,0.00
+20261026,bing / organic,(not set),8,3,7,0,0.00
+20261026,blog.trailnotes.example / referral,(not set),3,1,3,0,0.00
+20261026,facebook / paid,Leads - Teeth Whitening Offer,34,16,29,0,0.00
+20261026,facebook / paid,Leads - Free Consultation,23,10,20,0,0.00
+20261026,fb / paid,Leads - Teeth Whitening Offer,7,4,6,0,0.00
+20261026,fb / paid,Leads - Free Consultation,5,4,4,0,0.00
+20261026,google / cpc,Search - Brand,1,1,1,0,0.00
+20261026,google / cpc,Search - Emergency Dentist,3,3,3,0,0.00
+20261026,google / cpc,Search - Invisalign,3,1,2,0,0.00
+20261026,google / cpc,PMax - New Patients,3,2,2,1,0.00
+20261026,google / organic,(not set),97,68,84,1,0.00
+20261026,ig / paid,Leads - Teeth Whitening Offer,7,3,6,0,0.00
+20261026,ig / paid,Leads - Free Consultation,5,2,4,0,0.00
+20261026,news.localdirectory.example / referral,(not set),2,2,2,0,0.00
+20261027,(direct) / (none),(not set),110,67,83,5,0.00
+20261027,bing / organic,(not set),10,7,8,0,0.00
+20261027,blog.trailnotes.example / referral,(not set),4,4,3,0,0.00
+20261027,facebook / paid,Leads - Teeth Whitening Offer,24,14,21,0,0.00
+20261027,facebook / paid,Leads - Free Consultation,18,13,14,2,0.00
+20261027,fb / paid,Leads - Teeth Whitening Offer,5,2,5,0,0.00
+20261027,fb / paid,Leads - Free Consultation,4,1,3,0,0.00
+20261027,google / cpc,Search - Brand,2,2,2,0,0.00
+20261027,google / cpc,Search - Emergency Dentist,3,3,2,0,0.00
+20261027,google / cpc,Search - Invisalign,4,1,4,0,0.00
+20261027,google / cpc,PMax - New Patients,3,3,3,1,0.00
+20261027,google / organic,(not set),116,86,90,5,0.00
+20261027,ig / paid,Leads - Teeth Whitening Offer,5,3,4,0,0.00
+20261027,ig / paid,Leads - Free Consultation,4,2,3,0,0.00
+20261027,news.localdirectory.example / referral,(not set),3,2,2,2,0.00
+20261027,newsletter / email,weekly-newsletter,34,26,26,1,0.00
+20261028,(direct) / (none),(not set),108,51,96,0,0.00
+20261028,bing / organic,(not set),9,4,8,0,0.00
+20261028,blog.trailnotes.example / referral,(not set),3,1,3,0,0.00
+20261028,facebook / paid,Leads - Teeth Whitening Offer,24,13,21,0,0.00
+20261028,facebook / paid,Leads - Free Consultation,20,11,17,1,0.00
+20261028,fb / paid,Leads - Teeth Whitening Offer,5,2,4,0,0.00
+20261028,fb / paid,Leads - Free Consultation,4,4,3,0,0.00
+20261028,google / cpc,Search - Brand,1,0,1,0,0.00
+20261028,google / cpc,Search - Emergency Dentist,3,3,2,0,0.00
+20261028,google / cpc,Search - Invisalign,4,2,4,0,0.00
+20261028,google / cpc,PMax - New Patients,3,2,2,0,0.00
+20261028,google / organic,(not set),107,80,80,2,0.00
+20261028,ig / paid,Leads - Teeth Whitening Offer,5,3,4,0,0.00
+20261028,ig / paid,Leads - Free Consultation,4,2,4,0,0.00
+20261028,news.localdirectory.example / referral,(not set),2,2,2,0,0.00
+20261029,(direct) / (none),(not set),93,50,73,3,0.00
+20261029,bing / organic,(not set),12,9,9,0,0.00
+20261029,blog.trailnotes.example / referral,(not set),3,3,3,0,0.00
+20261029,facebook / paid,Leads - Teeth Whitening Offer,18,8,14,0,0.00
+20261029,facebook / paid,Leads - Free Consultation,27,16,25,0,0.00
+20261029,fb / paid,Leads - Teeth Whitening Offer,4,2,3,0,0.00
+20261029,fb / paid,Leads - Free Consultation,6,2,6,0,0.00
+20261029,google / cpc,Search - Brand,1,1,1,0,0.00
+20261029,google / cpc,Search - Emergency Dentist,3,2,3,0,0.00
+20261029,google / cpc,Search - Invisalign,3,3,3,0,0.00
+20261029,google / cpc,PMax - New Patients,3,0,3,0,0.00
+20261029,google / organic,(not set),136,88,120,2,0.00
+20261029,ig / paid,Leads - Teeth Whitening Offer,4,3,3,0,0.00
+20261029,ig / paid,Leads - Free Consultation,6,5,6,0,0.00
+20261029,news.localdirectory.example / referral,(not set),2,1,2,0,0.00
+20261030,(direct) / (none),(not set),108,70,84,2,0.00
+20261030,bing / organic,(not set),8,4,7,0,0.00
+20261030,blog.trailnotes.example / referral,(not set),4,3,3,0,0.00
+20261030,facebook / paid,Leads - Teeth Whitening Offer,27,15,24,0,0.00
+20261030,facebook / paid,Leads - Free Consultation,20,10,18,0,0.00
+20261030,fb / paid,Leads - Teeth Whitening Offer,6,4,5,0,0.00
+20261030,fb / paid,Leads - Free Consultation,4,1,3,0,0.00
+20261030,google / cpc,Search - Brand,2,0,2,0,0.00
+20261030,google / cpc,Search - Emergency Dentist,3,2,3,0,0.00
+20261030,google / cpc,Search - Invisalign,3,2,2,0,0.00
+20261030,google / cpc,PMax - New Patients,3,2,2,0,0.00
+20261030,google / organic,(not set),94,68,84,1,0.00
+20261030,ig / paid,Leads - Teeth Whitening Offer,6,3,5,0,0.00
+20261030,ig / paid,Leads - Free Consultation,4,1,3,1,0.00
+20261030,news.localdirectory.example / referral,(not set),3,2,3,0,0.00
+20261031,(direct) / (none),(not set),65,38,59,2,0.00
+20261031,bing / organic,(not set),5,4,5,0,0.00
+20261031,blog.trailnotes.example / referral,(not set),2,0,2,0,0.00
+20261031,facebook / paid,Leads - Teeth Whitening Offer,13,9,11,0,0.00
+20261031,facebook / paid,Leads - Free Consultation,18,9,16,1,0.00
+20261031,fb / paid,Leads - Teeth Whitening Offer,3,3,2,0,0.00
+20261031,fb / paid,Leads - Free Consultation,4,3,4,0,0.00
+20261031,google / cpc,Search - Brand,1,1,1,0,0.00
+20261031,google / cpc,Search - Emergency Dentist,1,1,1,0,0.00
+20261031,google / cpc,Search - Invisalign,1,1,1,0,0.00
+20261031,google / cpc,PMax - New Patients,1,0,1,0,0.00
+20261031,google / organic,(not set),62,50,57,1,0.00
+20261031,ig / paid,Leads - Teeth Whitening Offer,3,1,3,0,0.00
+20261031,ig / paid,Leads - Free Consultation,4,3,3,1,0.00
+20261031,news.localdirectory.example / referral,(not set),1,1,1,0,0.00

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tracking &amp; Reporting Audit - {{ r.client_name }}</title>
+<style>
+  @page { size: A4; margin: 0; }
+  :root {
+    --ink: #1b2430; --muted: #5d6b7c; --line: #dfe4ea; --paper: #ffffff; --bg: #eef0f3;
+    --accent: #1f3a5f;
+    --green: #17653a; --green-bg: #e6f3ea;
+    --amber: #8a5300; --amber-bg: #fdf1d9;
+    --red: #a32020; --red-bg: #fbe5e3;
+    --flat: #4b5766; --flat-bg: #eceff3;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-size: 10pt; line-height: 1.4;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+  .page { width: 210mm; min-height: 297mm; margin: 0 auto; background: var(--paper);
+    padding: 13mm 14mm 11mm; display: flex; flex-direction: column; }
+  @media screen { .page { margin: 16px auto; box-shadow: 0 1px 8px rgba(20,30,50,.12); } }
+  @media print { body { background: none; } .page { margin: 0; box-shadow: none; height: 297mm; overflow: hidden; } }
+  @media (max-width: 800px) { .page { width: auto; min-height: 0; padding: 20px 16px; } .head { flex-direction: column; } .score { align-self: flex-start; } }
+
+  .eyebrow { font-size: 8pt; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+  .head { display: flex; justify-content: space-between; align-items: flex-start; gap: 10mm;
+    padding-bottom: 5mm; border-bottom: 2px solid var(--accent); }
+  h1 { font-size: 21pt; line-height: 1.15; margin: 1.5mm 0 2.5mm; letter-spacing: -.01em; font-weight: 700; }
+  .meta { color: var(--muted); font-size: 9pt; line-height: 1.6; }
+  .meta b { color: var(--ink); font-weight: 600; }
+  .score { text-align: right; flex: none; min-width: 52mm; }
+  .score .num { font-size: 44pt; line-height: 1; font-weight: 700; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+  .score .num small { font-size: 14pt; color: var(--muted); font-weight: 500; letter-spacing: 0; }
+  .score .verdict { font-size: 9.5pt; font-weight: 700; margin-top: 1mm; }
+  .score .verdict.green { color: var(--green); } .score .verdict.amber { color: var(--amber); }
+  .score .verdict.red { color: var(--red); } .score .verdict.flat { color: var(--flat); }
+  .bar { height: 2.2mm; background: var(--flat-bg); border-radius: 2mm; margin-top: 2.5mm; overflow: hidden; }
+  .bar i { display: block; height: 100%; border-radius: 2mm; }
+  .bar i.green { background: var(--green); } .bar i.amber { background: #c27a00; }
+  .bar i.red { background: var(--red); } .bar i.flat { background: var(--flat); }
+
+  h2 { font-size: 8pt; letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
+    margin: 5mm 0 1.5mm; font-weight: 700; }
+  .checks { border-top: 1px solid var(--line); }
+  .row { display: grid; grid-template-columns: 7mm 1fr 36mm; gap: 3mm; padding: 2.6mm 0;
+    border-bottom: 1px solid var(--line); align-items: start; }
+  .row .n { font-weight: 700; color: var(--accent); font-size: 10pt; font-variant-numeric: tabular-nums; }
+  .row .t { font-weight: 650; font-size: 10.2pt; }
+  .row .hl { color: var(--ink); font-size: 9pt; font-weight: 600; margin-top: .3mm; }
+  .row p { margin: 1mm 0 0; color: var(--muted); font-size: 8.6pt; line-height: 1.4; }
+  .row p b { color: var(--ink); font-weight: 600; }
+  .row.na .t, .row.na .hl { color: var(--muted); }
+  .pill { justify-self: end; display: inline-flex; align-items: center; gap: 1.5mm; white-space: nowrap;
+    font-size: 8pt; font-weight: 700; padding: .9mm 2.6mm; border-radius: 3mm; border: 1px solid transparent; }
+  .pill.green { color: var(--green); background: var(--green-bg); border-color: #bfdfca; }
+  .pill.amber { color: var(--amber); background: var(--amber-bg); border-color: #efd699; }
+  .pill.red { color: var(--red); background: var(--red-bg); border-color: #f0bcb7; }
+  .pill.not_assessed { color: var(--flat); background: var(--flat-bg); border-color: #d5dbe3; }
+
+  .fixes { margin: 0; padding: 0; list-style: none; counter-reset: fix; }
+  .fixes li { counter-increment: fix; display: grid; grid-template-columns: 7mm 1fr; gap: 3mm;
+    padding: 2mm 0; border-bottom: 1px solid var(--line); font-size: 9.2pt; }
+  .fixes li::before { content: counter(fix); width: 5.5mm; height: 5.5mm; border-radius: 50%;
+    background: var(--accent); color: #fff; font-weight: 700; font-size: 8pt; display: grid; place-items: center; margin-top: .3mm; }
+  .fixes b { font-weight: 650; }
+  .fixes span { color: var(--muted); }
+  .nofix { color: var(--muted); font-size: 9.2pt; margin: 1mm 0 0; }
+
+  .next { margin-top: auto; padding-top: 4mm; }
+  .next .box { background: #f4f6f9; border-left: 3px solid var(--accent); padding: 3.5mm 4.5mm; border-radius: 0 2mm 2mm 0; }
+  .next .box b { display: block; font-size: 10pt; margin-bottom: .8mm; }
+  .next .box span { color: var(--muted); font-size: 9pt; }
+  .foot { display: flex; justify-content: space-between; gap: 8mm; margin-top: 3.5mm; color: var(--muted); font-size: 7.4pt; line-height: 1.45; }
+  .foot .contact { text-align: right; white-space: nowrap; color: var(--ink); font-size: 8.4pt; }
+</style>
+</head>
+<body>
+<main class="page">
+  <header class="head">
+    <div>
+      <div class="eyebrow">Tracking &amp; Reporting Audit</div>
+      <h1>{{ r.client_name }}</h1>
+      <div class="meta">
+        <div><b>Period</b> {{ period }} ({{ r.days }} days)</div>
+        <div><b>Prepared by</b> {{ consultant }} &nbsp;&middot;&nbsp; <b>Date</b> {{ date_text }}</div>
+      </div>
+    </div>
+    <div class="score" aria-label="Score {{ r.score if r.score is not none else 'not available' }} out of 100">
+      <div class="num">{{ r.score if r.score is not none else '--' }}<small> / 100</small></div>
+      <div class="verdict {{ tone }}">{{ verdict }}</div>
+      <div class="bar"><i class="{{ tone }}" style="width: {{ r.score or 0 }}%"></i></div>
+    </div>
+  </header>
+
+  <h2>Six checks</h2>
+  <div class="checks">
+  {% for c in r.checks %}
+    <div class="row{{ ' na' if c.status == 'not_assessed' }}">
+      <div class="n">{{ c.number }}</div>
+      <div>
+        <div class="t">{{ c.title }}</div>
+        <div class="hl">{{ c.headline }}</div>
+        <p>{{ c.what }}{% if c.status in ('amber', 'red') %} <b>Why it matters:</b> {{ c.why }}{% endif %}</p>
+      </div>
+      <div><span class="pill {{ c.status }}"><span aria-hidden="true">{{ pills[c.status][1]|safe }}</span>{{ pills[c.status][0] }}</span></div>
+    </div>
+  {% endfor %}
+  </div>
+
+  <h2>Top fixes, in priority order</h2>
+  {% if fixes %}
+  <ol class="fixes">
+    {% for c in fixes %}
+    <li><div><b>{{ c.title }}.</b> <span>{{ c.fix }}</span></div></li>
+    {% endfor %}
+  </ol>
+  {% else %}
+  <p class="nofix">Nothing urgent. Re-run this audit every quarter or after any site or tracking change.</p>
+  {% endif %}
+
+  <section class="next">
+    <div class="box">
+      <b>Next step: Reporting Pipeline Setup</b>
+      <span>Connect these sources to one warehouse with tested numbers, automatic monitoring that catches issues like these within a day, and white-label client reports.</span>
+    </div>
+    <div class="foot">
+      <div>
+        Based on CSV exports ({{ provided|join(', ') }}){% if skipped %}; {{ skipped|join(' and ') }} not provided{% endif %}.
+        Score: weighted checks, healthy = full weight, needs attention = half, critical = none; checks not assessed are excluded.
+        {% for n in r.notes %}{{ n }} {% endfor %}
+      </div>
+      <div class="contact">{{ consultant }}<br>{{ contact }}</div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

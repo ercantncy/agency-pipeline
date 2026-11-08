@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tracking &amp; Reporting Audit - Harbor Coffee Roasters</title>
+<style>
+  @page { size: A4; margin: 0; }
+  :root {
+    --ink: #1b2430; --muted: #5d6b7c; --line: #dfe4ea; --paper: #ffffff; --bg: #eef0f3;
+    --accent: #1f3a5f;
+    --green: #17653a; --green-bg: #e6f3ea;
+    --amber: #8a5300; --amber-bg: #fdf1d9;
+    --red: #a32020; --red-bg: #fbe5e3;
+    --flat: #4b5766; --flat-bg: #eceff3;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-size: 10pt; line-height: 1.4;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+  .page { width: 210mm; min-height: 297mm; margin: 0 auto; background: var(--paper);
+    padding: 13mm 14mm 11mm; display: flex; flex-direction: column; }
+  @media screen { .page { margin: 16px auto; box-shadow: 0 1px 8px rgba(20,30,50,.12); } }
+  @media print { body { background: none; } .page { margin: 0; box-shadow: none; height: 297mm; overflow: hidden; } }
+  @media (max-width: 800px) { .page { width: auto; min-height: 0; padding: 20px 16px; } .head { flex-direction: column; } .score { align-self: flex-start; } }
+
+  .eyebrow { font-size: 8pt; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+  .head { display: flex; justify-content: space-between; align-items: flex-start; gap: 10mm;
+    padding-bottom: 5mm; border-bottom: 2px solid var(--accent); }
+  h1 { font-size: 21pt; line-height: 1.15; margin: 1.5mm 0 2.5mm; letter-spacing: -.01em; font-weight: 700; }
+  .meta { color: var(--muted); font-size: 9pt; line-height: 1.6; }
+  .meta b { color: var(--ink); font-weight: 600; }
+  .score { text-align: right; flex: none; min-width: 52mm; }
+  .score .num { font-size: 44pt; line-height: 1; font-weight: 700; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+  .score .num small { font-size: 14pt; color: var(--muted); font-weight: 500; letter-spacing: 0; }
+  .score .verdict { font-size: 9.5pt; font-weight: 700; margin-top: 1mm; }
+  .score .verdict.green { color: var(--green); } .score .verdict.amber { color: var(--amber); }
+  .score .verdict.red { color: var(--red); } .score .verdict.flat { color: var(--flat); }
+  .bar { height: 2.2mm; background: var(--flat-bg); border-radius: 2mm; margin-top: 2.5mm; overflow: hidden; }
+  .bar i { display: block; height: 100%; border-radius: 2mm; }
+  .bar i.green { background: var(--green); } .bar i.amber { background: #c27a00; }
+  .bar i.red { background: var(--red); } .bar i.flat { background: var(--flat); }
+
+  h2 { font-size: 8pt; letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
+    margin: 5mm 0 1.5mm; font-weight: 700; }
+  .checks { border-top: 1px solid var(--line); }
+  .row { display: grid; grid-template-columns: 7mm 1fr 36mm; gap: 3mm; padding: 2.6mm 0;
+    border-bottom: 1px solid var(--line); align-items: start; }
+  .row .n { font-weight: 700; color: var(--accent); font-size: 10pt; font-variant-numeric: tabular-nums; }
+  .row .t { font-weight: 650; font-size: 10.2pt; }
+  .row .hl { color: var(--ink); font-size: 9pt; font-weight: 600; margin-top: .3mm; }
+  .row p { margin: 1mm 0 0; color: var(--muted); font-size: 8.6pt; line-height: 1.4; }
+  .row p b { color: var(--ink); font-weight: 600; }
+  .row.na .t, .row.na .hl { color: var(--muted); }
+  .pill { justify-self: end; display: inline-flex; align-items: center; gap: 1.5mm; white-space: nowrap;
+    font-size: 8pt; font-weight: 700; padding: .9mm 2.6mm; border-radius: 3mm; border: 1px solid transparent; }
+  .pill.green { color: var(--green); background: var(--green-bg); border-color: #bfdfca; }
+  .pill.amber { color: var(--amber); background: var(--amber-bg); border-color: #efd699; }
+  .pill.red { color: var(--red); background: var(--red-bg); border-color: #f0bcb7; }
+  .pill.not_assessed { color: var(--flat); background: var(--flat-bg); border-color: #d5dbe3; }
+
+  .fixes { margin: 0; padding: 0; list-style: none; counter-reset: fix; }
+  .fixes li { counter-increment: fix; display: grid; grid-template-columns: 7mm 1fr; gap: 3mm;
+    padding: 2mm 0; border-bottom: 1px solid var(--line); font-size: 9.2pt; }
+  .fixes li::before { content: counter(fix); width: 5.5mm; height: 5.5mm; border-radius: 50%;
+    background: var(--accent); color: #fff; font-weight: 700; font-size: 8pt; display: grid; place-items: center; margin-top: .3mm; }
+  .fixes b { font-weight: 650; }
+  .fixes span { color: var(--muted); }
+  .nofix { color: var(--muted); font-size: 9.2pt; margin: 1mm 0 0; }
+
+  .next { margin-top: auto; padding-top: 4mm; }
+  .next .box { background: #f4f6f9; border-left: 3px solid var(--accent); padding: 3.5mm 4.5mm; border-radius: 0 2mm 2mm 0; }
+  .next .box b { display: block; font-size: 10pt; margin-bottom: .8mm; }
+  .next .box span { color: var(--muted); font-size: 9pt; }
+  .foot { display: flex; justify-content: space-between; gap: 8mm; margin-top: 3.5mm; color: var(--muted); font-size: 7.4pt; line-height: 1.45; }
+  .foot .contact { text-align: right; white-space: nowrap; color: var(--ink); font-size: 8.4pt; }
+</style>
+</head>
+<body>
+<main class="page">
+  <header class="head">
+    <div>
+      <div class="eyebrow">Tracking &amp; Reporting Audit</div>
+      <h1>Harbor Coffee Roasters</h1>
+      <div class="meta">
+        <div><b>Period</b> Oct 2 to Oct 31, 2026 (30 days)</div>
+        <div><b>Prepared by</b> Ercan Tuncay &nbsp;&middot;&nbsp; <b>Date</b> November 8, 2026</div>
+      </div>
+    </div>
+    <div class="score" aria-label="Score 68 out of 100">
+      <div class="num">68<small> / 100</small></div>
+      <div class="verdict amber">Needs attention</div>
+      <div class="bar"><i class="amber" style="width: 68%"></i></div>
+    </div>
+  </header>
+
+  <h2>Six checks</h2>
+  <div class="checks">
+  
+    <div class="row">
+      <div class="n">1</div>
+      <div>
+        <div class="t">Google Ads clicks vs GA4 sessions</div>
+        <div class="hl">80% of clicks arrive as GA4 sessions</div>
+        <p>9,640 Google Ads clicks versus 7,745 GA4 google / cpc sessions (80%), within the normal range.</p>
+      </div>
+      <div><span class="pill green"><span aria-hidden="true">&#10003;</span>Healthy</span></div>
+    </div>
+  
+    <div class="row">
+      <div class="n">2</div>
+      <div>
+        <div class="t">Meta link clicks vs GA4 sessions</div>
+        <div class="hl">65% of link clicks arrive as GA4 sessions</div>
+        <p>8,378 Meta link clicks versus 5,406 GA4 paid-social sessions (65%), within the normal range.</p>
+      </div>
+      <div><span class="pill green"><span aria-hidden="true">&#10003;</span>Healthy</span></div>
+    </div>
+  
+    <div class="row">
+      <div class="n">3</div>
+      <div>
+        <div class="t">UTM and campaign tagging</div>
+        <div class="hl">3 Meta source labels; 0% of paid sessions untagged</div>
+        <p>Meta traffic is split over 3 source labels (facebook, ig, fb). <b>Why it matters:</b> Split or missing tags break campaign-level reporting: the same channel appears as several rows, and untagged paid visits cannot be tied to the spend that caused them.</p>
+      </div>
+      <div><span class="pill amber"><span aria-hidden="true">&#9650;</span>Needs attention</span></div>
+    </div>
+  
+    <div class="row">
+      <div class="n">4</div>
+      <div>
+        <div class="t">Conversion agreement</div>
+        <div class="hl">Google Ads: 77% / Meta: 49%</div>
+        <p>Google Ads reported 379 conversions, GA4 recorded 293 key events (77%); Meta reported 181 conversions, GA4 recorded 88 key events (49%). Agreement within roughly 60 to 160% is normal. <b>Why it matters:</b> When the platform and GA4 disagree, nobody can say what a lead or sale really costs, and bidding algorithms optimise on the wrong signal.</p>
+      </div>
+      <div><span class="pill amber"><span aria-hidden="true">&#9650;</span>Needs attention</span></div>
+    </div>
+  
+    <div class="row">
+      <div class="n">5</div>
+      <div>
+        <div class="t">Volume drops and outages</div>
+        <div class="hl">3 days of missing data</div>
+        <p>GA4 sessions collapsed or were missing on Oct 19 to Oct 21. Ad platforms still recorded 1,544 clicks on those days, so the visitors were there; GA4 simply did not see them. <b>Why it matters:</b> Gaps like this look like a traffic crash in reports and make those days unusable for conversion rates and cost per result.</p>
+      </div>
+      <div><span class="pill red"><span aria-hidden="true">&#10005;</span>Critical</span></div>
+    </div>
+  
+    <div class="row">
+      <div class="n">6</div>
+      <div>
+        <div class="t">Suspicious direct and organic traffic</div>
+        <div class="hl">Direct 17% of sessions; organic 0.90x GSC clicks</div>
+        <p>Direct is 17% of sessions and organic sessions match Search Console clicks (0.90x).</p>
+      </div>
+      <div><span class="pill green"><span aria-hidden="true">&#10003;</span>Healthy</span></div>
+    </div>
+  
+  </div>
+
+  <h2>Top fixes, in priority order</h2>
+  
+  <ol class="fixes">
+    
+    <li><div><b>Volume drops and outages.</b> <span>Find what changed on those dates (tag manager publish, consent banner, site release), fix it, and set up an alert so the next outage is caught within a day.</span></div></li>
+    
+    <li><div><b>Conversion agreement.</b> <span>Check that the same conversion event is imported into Google Ads as in GA4, remove duplicate or test events, and compare attribution windows before comparing totals.</span></div></li>
+    
+    <li><div><b>UTM and campaign tagging.</b> <span>Agree one naming convention (for example utm_source=facebook, utm_medium=paid_social) and apply it to every ad. Use a GA4 channel-grouping rule to merge the old variants.</span></div></li>
+    
+  </ol>
+  
+
+  <section class="next">
+    <div class="box">
+      <b>Next step: Reporting Pipeline Setup</b>
+      <span>Connect these sources to one warehouse with tested numbers, automatic monitoring that catches issues like these within a day, and white-label client reports.</span>
+    </div>
+    <div class="foot">
+      <div>
+        Based on CSV exports (Google Ads, GA4, Meta Ads, Search Console).
+        Score: weighted checks, healthy = full weight, needs attention = half, critical = none; checks not assessed are excluded.
+        
+      </div>
+      <div class="contact">Ercan Tuncay<br>hello@example.com</div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

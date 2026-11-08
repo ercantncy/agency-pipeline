@@ -208,5 +208,65 @@ def _export_web(out: str, months: str | None, use_llm: bool | None) -> None:
     console.print(f"[green]exported[/green] {len(paths)} files to {out_dir}")
 
 
+@app.command()
+def audit(
+    google_ads: str = typer.Option(..., "--google-ads", help="Google Ads campaign-by-day CSV."),
+    ga4: str = typer.Option(..., "--ga4", help="GA4 traffic CSV (by day, source / medium)."),
+    client_name: str = typer.Option(..., "--client-name", help="Client name on the scorecard."),
+    meta: str | None = typer.Option(None, "--meta", help="Meta Ads Manager campaign-by-day CSV."),
+    gsc: str | None = typer.Option(None, "--gsc", help="Search Console 'Dates.csv' export."),
+    currency: str | None = typer.Option(None, help="Currency code (default: from the export)."),
+    consultant: str = typer.Option("Ercan Tuncay", help="Name shown as preparer."),
+    out: str | None = typer.Option(None, help="Output HTML (default output/audits/<slug>-<date>)."),
+) -> None:
+    """Tracking & Reporting Audit: CSV exports in, one-page HTML scorecard out."""
+    from pathlib import Path
+
+    from agency_pipeline.audit.runner import AuditError, run_audit
+    from agency_pipeline.audit.scorecard import slugify, write_scorecard
+    from agency_pipeline.sources.csv_exports import ExportError
+
+    try:
+        result = run_audit(
+            google_ads_path=Path(google_ads), ga4_path=Path(ga4), client_name=client_name,
+            meta_path=Path(meta) if meta else None, gsc_path=Path(gsc) if gsc else None,
+            currency=currency, consultant=consultant,
+        )  # fmt: skip
+    except (ExportError, AuditError, FileNotFoundError) as e:
+        console.print(f"[red]error:[/red] {e}")
+        raise typer.Exit(code=2) from None
+    default = config.OUTPUT_DIR / "audits" / f"{slugify(client_name)}-{date.today():%Y-%m-%d}.html"
+    path = write_scorecard(result, Path(out) if out else default, consultant)
+    table = Table(title=f"Audit: {client_name}, score {result.score}/100")
+    for col in ("#", "check", "status", "headline"):
+        table.add_column(col)
+    for c in result.checks:
+        table.add_row(str(c.number), c.title, c.status, c.headline)
+    console.print(table)
+    for n in result.notes:
+        console.print(f"[yellow]note:[/yellow] {n}")
+    console.print(f"[green]wrote[/green] {path}")
+
+
+@app.command("sample-exports")
+def sample_exports_cmd(
+    client: str = typer.Option(..., help="Synthetic client id, e.g. bluepeak-dental."),
+    out: str = typer.Option(..., help="Directory for the generated CSV files."),
+    end: str = typer.Option(DEFAULT_END.isoformat(), help="Last day, YYYY-MM-DD."),
+    days: int = typer.Option(30, help="Number of days ending at --end."),
+) -> None:
+    """Write UI-style CSV exports (Google Ads, GA4, Meta, Search Console) for a synthetic client."""
+    from pathlib import Path
+
+    from agency_pipeline.audit.sample_exports import generate
+
+    try:
+        paths = generate(client, Path(out), date.fromisoformat(end), days)
+    except ValueError as e:
+        raise typer.BadParameter(str(e)) from None
+    for p in paths.values():
+        console.print(f"[green]wrote[/green] {p}")
+
+
 if __name__ == "__main__":
     app()

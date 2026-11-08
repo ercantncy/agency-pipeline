@@ -16,6 +16,16 @@ cd web && npm ci && npm run dev        # http://localhost:5173
 
 Screens: portfolio overview, client detail (overview, paid media, campaigns, website, SEO, data quality), alert center, and a print-ready white-label report at `#/report/<client>/<month>`. Contract: [docs/WEB_SPEC.md](docs/WEB_SPEC.md).
 
+## Tracking & Reporting Audit
+
+The entry-level engagement: an agency sends four CSV exports (Google Ads, GA4, Meta, optional Search Console) and gets a one-page scorecard with six checks, a 0–100 score and the top three fixes.
+
+```bash
+uv run agency-pipeline audit --google-ads ads.csv --ga4 ga4.csv --meta meta.csv --gsc Dates.csv --client-name "Acme Dental"
+```
+
+Samples: [BluePeak Dental (38/100)](docs/samples/audit-bluepeak-dental.html), [Harbor Coffee (68/100)](docs/samples/audit-harbor-coffee.html). Export guide for agencies: [docs/audit-csv-guide.md](docs/audit-csv-guide.md).
+
 ## Architecture
 
 ```mermaid
