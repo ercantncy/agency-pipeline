@@ -24,7 +24,7 @@ The entry-level engagement: an agency sends four CSV exports (Google Ads, GA4, M
 uv run agency-pipeline audit --google-ads ads.csv --ga4 ga4.csv --meta meta.csv --gsc Dates.csv --client-name "Acme Dental"
 ```
 
-Samples: [BluePeak Dental (38/100)](docs/samples/audit-bluepeak-dental.html), [Harbor Coffee (68/100)](docs/samples/audit-harbor-coffee.html). Export guide for agencies: [docs/audit-csv-guide.md](docs/audit-csv-guide.md).
+Samples: [BluePeak Dental (38/100)](https://ercantncy.github.io/agency-pipeline/samples/audit-bluepeak-dental.html), [Harbor Coffee (68/100)](https://ercantncy.github.io/agency-pipeline/samples/audit-harbor-coffee.html). Export guide for agencies: [docs/audit-csv-guide.md](docs/audit-csv-guide.md).
 
 ## Architecture
 
