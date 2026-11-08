@@ -156,36 +156,56 @@ def run(
     month_d = _parse_month(month)
     month_end = (month_d + timedelta(days=32)).replace(day=1) - timedelta(days=1)
 
-    console.rule("1/4 extract-load")
+    console.rule("1/5 extract-load")
     extract_load(
         client=None, start=DEFAULT_START.isoformat(), end=DEFAULT_END.isoformat()
     )
-    console.rule("2/4 transform")
+    console.rule("2/5 transform")
     transform()
-    console.rule("3/4 check")
+    console.rule("3/5 check")
     exit_code = 0
     try:
         check(end=month_end.isoformat(), client=None, as_json=False)
     except typer.Exit as e:
         exit_code = e.exit_code
-    console.rule("4/4 report")
+    console.rule("4/5 report")
     _build_reports("all", month_d, False if no_llm else None)
+    console.rule("5/5 export-web")
+    _export_web("web/public/data", None, False if no_llm else None)
     if exit_code:
         console.print("[red]Critical alerts are open (reports were still built).[/red]")
         raise typer.Exit(code=exit_code)
 
 
-@app.command()
-def site(
-    month: str = typer.Option(DEFAULT_MONTH, help="Report month, YYYY-MM."),
+@app.command("export-web")
+def export_web_cmd(
+    out: str = typer.Option("web/public/data", help="Output directory for the JSON files."),
+    months: str | None = typer.Option(
+        None, help="Comma list of YYYY-MM (default: all full months)."
+    ),
+    llm: bool = typer.Option(False, "--llm", help="Use the LLM for commentary (needs an API key)."),
 ) -> None:
-    """Bundle the month's reports and an index page into output/site (for GitHub Pages)."""
-    from agency_pipeline.site import build_site
+    """Export marts, alerts and commentary as JSON for the web app."""
+    _export_web(out, months, llm)
 
-    index = build_site(
-        config.OUTPUT_DIR / "reports", config.OUTPUT_DIR / "site", _parse_month(month)
-    )
-    console.print(f"wrote {index.relative_to(config.PROJECT_ROOT)}")
+
+def _export_web(out: str, months: str | None, use_llm: bool | None) -> None:
+    from pathlib import Path
+
+    import duckdb
+
+    from agency_pipeline.export_web import export_web
+
+    month_list = [_parse_month(m.strip()) for m in months.split(",")] if months else None
+    out_dir = Path(out)
+    if not out_dir.is_absolute():
+        out_dir = config.PROJECT_ROOT / out_dir
+    con = duckdb.connect(str(config.warehouse_path()), read_only=True)
+    try:
+        paths = export_web(con, out_dir, month_list, use_llm)
+    finally:
+        con.close()
+    console.print(f"[green]exported[/green] {len(paths)} files to {out_dir}")
 
 
 if __name__ == "__main__":
