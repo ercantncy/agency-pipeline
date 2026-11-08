@@ -1,0 +1,26 @@
+name: agency_reporting
+version: "0.1.0"
+config-version: 2
+profile: agency_reporting
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+vars:
+  # Reconciliation: GA4 sessions / platform clicks. Below `critical` => critical, below `warn` => warn.
+  recon_google_ads_critical: 0.30
+  recon_google_ads_warn: 0.50
+  recon_meta_ads_critical: 0.20
+  recon_meta_ads_warn: 0.40
+
+models:
+  agency_reporting:
+    staging:
+      +materialized: view
+      +schema: staging
+    marts:
+      +materialized: table
+      +schema: marts

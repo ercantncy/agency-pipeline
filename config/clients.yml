@@ -1,0 +1,34 @@
+# Client registry. One entry per client; `scenario` drives the synthetic data engine.
+clients:
+  - client_id: northwind-outdoor
+    client_name: Northwind Outdoor Co.
+    agency_brand: &brand
+      name: Brightline Digital
+      primary_color: "#2F6FEB"
+      logo_text: Brightline
+    currency: USD
+    google_ads_customer_id: "123-456-7890"
+    meta_account_id: "act_100200300"
+    ga4_property_id: "400100001"
+    gsc_site_url: "https://www.northwindoutdoor.example/"
+    scenario: healthy
+
+  - client_id: bluepeak-dental
+    client_name: BluePeak Dental Group
+    agency_brand: *brand
+    currency: GBP
+    google_ads_customer_id: "234-567-8901"
+    meta_account_id: "act_100200301"
+    ga4_property_id: "400100002"
+    gsc_site_url: "https://www.bluepeakdental.example/"
+    scenario: broken_autotagging
+
+  - client_id: harbor-coffee
+    client_name: Harbor Coffee Roasters
+    agency_brand: *brand
+    currency: USD
+    google_ads_customer_id: "345-678-9012"
+    meta_account_id: "act_100200302"
+    ga4_property_id: "400100003"
+    gsc_site_url: "https://www.harborcoffee.example/"
+    scenario: tracking_outage

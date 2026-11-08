@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - run: uv sync
+      - run: uv run ruff check
+      - run: uv run pytest
+      - name: Run the pipeline end to end (criticals are expected on synthetic data)
+        run: uv run agency-pipeline run --month 2026-10 --no-llm || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: client-reports
+          path: output/reports

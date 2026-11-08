@@ -1,0 +1,247 @@
+version: 2
+
+models:
+  - name: dim_client
+    description: One row per client with white-label agency branding and source account ids.
+    columns:
+      - name: client_id
+        description: Client slug; primary key.
+        tests: [unique, not_null]
+      - name: client_name
+        description: Display name of the client.
+        tests: [not_null]
+      - name: agency_name
+        description: Agency brand shown on reports.
+      - name: agency_primary_color
+        description: Agency brand color (hex).
+      - name: agency_logo_text
+        description: Text used as the agency logo.
+      - name: currency
+        description: Reporting currency of all money columns for this client.
+        tests:
+          - accepted_values:
+              arguments: {values: ['USD', 'GBP']}
+      - name: scenario
+        description: Synthetic data scenario (healthy, broken_autotagging, tracking_outage).
+      - name: google_ads_customer_id
+        description: Google Ads customer id.
+      - name: meta_account_id
+        description: Meta ad account id.
+      - name: ga4_property_id
+        description: GA4 property id.
+      - name: gsc_site_url
+        description: Search Console property URL.
+
+  - name: fct_paid_daily
+    description: Daily paid media performance per campaign, Google Ads and Meta Ads, in client currency.
+    tests:
+      - unique_combination_of_columns:
+          arguments: {combination_of_columns: [client_id, date, channel, campaign_id]}
+    columns:
+      - name: client_id
+        description: Client slug.
+        tests: [not_null]
+      - name: date
+        description: Calendar day.
+        tests: [not_null]
+      - name: channel
+        description: Ad platform.
+        tests:
+          - not_null
+          - accepted_values:
+              arguments: {values: ['google_ads', 'meta_ads']}
+      - name: campaign_id
+        description: Platform campaign id.
+        tests: [not_null]
+      - name: campaign_name
+        description: Platform campaign name.
+      - name: spend
+        description: Cost in currency units.
+        tests: [non_negative]
+      - name: impressions
+        description: Ad impressions.
+        tests: [non_negative]
+      - name: clicks
+        description: Clicks (Google Ads clicks; Meta inline link clicks).
+        tests: [non_negative]
+      - name: platform_conversions
+        description: Conversions as reported by the platform (Meta - purchases plus leads).
+        tests: [non_negative]
+      - name: platform_conversion_value
+        description: Conversion value reported by the platform.
+        tests: [non_negative]
+
+  - name: fct_web_daily
+    description: Daily GA4 traffic per default-style channel group.
+    tests:
+      - unique_combination_of_columns:
+          arguments: {combination_of_columns: [client_id, date, channel_group]}
+    columns:
+      - name: client_id
+        description: Client slug.
+        tests: [not_null]
+      - name: date
+        description: Calendar day.
+        tests: [not_null]
+      - name: channel_group
+        description: Channel derived from source and medium.
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['paid_search', 'paid_social', 'organic_search', 'email', 'referral', 'direct', 'other']
+      - name: sessions
+        description: GA4 sessions.
+        tests: [non_negative]
+      - name: engaged_sessions
+        description: Sessions that were engaged.
+        tests: [non_negative]
+      - name: users
+        description: Total users (summed across source rows, so not de-duplicated).
+        tests: [non_negative]
+      - name: key_events
+        description: GA4 key events (conversions).
+        tests: [non_negative]
+      - name: revenue
+        description: GA4 purchase revenue.
+        tests: [non_negative]
+
+  - name: fct_paid_vs_ga4_reconciliation
+    description: >
+      Compares ad-platform clicks with GA4 sessions from the matching paid channel. A low ratio
+      usually means broken tracking (for example lost auto-tagging) rather than lost traffic.
+    tests:
+      - unique_combination_of_columns:
+          arguments: {combination_of_columns: [client_id, date, channel]}
+    columns:
+      - name: client_id
+        description: Client slug.
+        tests: [not_null]
+      - name: date
+        description: Calendar day.
+        tests: [not_null]
+      - name: channel
+        description: Ad platform (google_ads is compared with GA4 paid_search, meta_ads with paid_social).
+        tests:
+          - not_null
+          - accepted_values:
+              arguments: {values: ['google_ads', 'meta_ads']}
+      - name: platform_clicks
+        description: Clicks reported by the ad platform.
+        tests: [non_negative]
+      - name: ga4_sessions
+        description: GA4 sessions in the matching channel group (0 when GA4 has no rows).
+        tests: [non_negative]
+      - name: session_click_ratio
+        description: ga4_sessions divided by platform_clicks; null when there are no clicks.
+        tests: [non_negative]
+      - name: platform_conversions
+        description: Conversions reported by the ad platform.
+        tests: [non_negative]
+      - name: ga4_key_events
+        description: GA4 key events in the matching channel group.
+        tests: [non_negative]
+      - name: status
+        description: ok, warn or critical, based on ratio thresholds set as dbt vars.
+        tests:
+          - not_null
+          - accepted_values:
+              arguments: {values: ['ok', 'warn', 'critical']}
+
+  - name: fct_seo_daily
+    description: Daily Search Console totals per client.
+    tests:
+      - unique_combination_of_columns:
+          arguments: {combination_of_columns: [client_id, date]}
+    columns:
+      - name: client_id
+        description: Client slug.
+        tests: [not_null]
+      - name: date
+        description: Calendar day.
+        tests: [not_null]
+      - name: clicks
+        description: Organic search clicks.
+        tests: [non_negative]
+      - name: impressions
+        description: Organic search impressions.
+        tests: [non_negative]
+      - name: ctr
+        description: clicks divided by impressions.
+        tests: [non_negative]
+      - name: avg_position
+        description: Average ranking position, weighted by impressions (lower is better).
+        tests: [non_negative]
+
+  - name: fct_seo_query_monthly
+    description: Monthly Search Console performance per search query.
+    tests:
+      - unique_combination_of_columns:
+          arguments: {combination_of_columns: [client_id, month, query]}
+    columns:
+      - name: client_id
+        description: Client slug.
+        tests: [not_null]
+      - name: month
+        description: First day of the month.
+        tests: [not_null]
+      - name: query
+        description: Search query.
+        tests: [not_null]
+      - name: clicks
+        description: Organic search clicks.
+        tests: [non_negative]
+      - name: impressions
+        description: Organic search impressions.
+        tests: [non_negative]
+      - name: ctr
+        description: clicks divided by impressions.
+        tests: [non_negative]
+      - name: avg_position
+        description: Impression-weighted average position (lower is better).
+        tests: [non_negative]
+
+  - name: rpt_client_monthly
+    description: Monthly paid KPIs per client and channel with month-over-month change, ready for reports.
+    tests:
+      - unique_combination_of_columns:
+          arguments: {combination_of_columns: [client_id, month, channel]}
+    columns:
+      - name: client_id
+        description: Client slug.
+        tests: [not_null]
+      - name: month
+        description: First day of the month.
+        tests: [not_null]
+      - name: channel
+        description: google_ads, meta_ads or total_paid (both platforms combined).
+        tests:
+          - not_null
+          - accepted_values:
+              arguments: {values: ['google_ads', 'meta_ads', 'total_paid']}
+      - name: spend
+        description: Total spend in client currency.
+        tests: [non_negative]
+      - name: clicks
+        description: Total clicks.
+        tests: [non_negative]
+      - name: conversions
+        description: Platform-reported conversions.
+        tests: [non_negative]
+      - name: conversion_value
+        description: Platform-reported conversion value.
+        tests: [non_negative]
+      - name: cpa
+        description: Cost per conversion (spend / conversions); null if no conversions.
+      - name: roas
+        description: Return on ad spend (conversion value / spend).
+      - name: ctr
+        description: Click-through rate (clicks / impressions).
+      - name: spend_mom_pct
+        description: Spend change vs previous month, as a fraction (0.10 = +10%).
+      - name: conversions_mom_pct
+        description: Conversions change vs previous month, as a fraction.
+      - name: cpa_mom_pct
+        description: CPA change vs previous month, as a fraction (negative is better).
+      - name: roas_mom_pct
+        description: ROAS change vs previous month, as a fraction.

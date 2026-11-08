@@ -1,0 +1,11 @@
+version: 2
+sources:
+  - name: raw
+    schema: raw
+    description: Raw extracts landed by `agency-pipeline extract-load`, one table per source report.
+    tables:
+      - name: google_ads_campaign_daily
+      - name: meta_ads_insights_daily
+      - name: ga4_traffic_daily
+      - name: gsc_search_daily
+      - name: clients

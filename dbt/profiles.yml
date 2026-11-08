@@ -1,0 +1,18 @@
+agency_reporting:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      # NOTE: dbt-duckdb resolves a relative path against the process working directory,
+      # not this folder. The CLI always passes an absolute path via the env var.
+      path: "{{ env_var('AGENCY_PIPELINE_WAREHOUSE', 'data/warehouse.duckdb') }}"
+      schema: main
+      threads: 4
+    prod:
+      type: bigquery
+      method: service-account
+      keyfile: "{{ env_var('BIGQUERY_KEYFILE') }}"
+      project: "{{ env_var('BIGQUERY_PROJECT') }}"
+      dataset: "{{ env_var('BIGQUERY_DATASET', 'agency_reporting') }}"
+      location: "{{ env_var('BIGQUERY_LOCATION', 'US') }}"
+      threads: 4

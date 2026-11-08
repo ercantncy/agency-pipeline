@@ -1,0 +1,108 @@
+{%- macro table(t) -%}
+<div class="table-wrap"><table>
+  <thead><tr>{% for h in t.head %}<th>{{ h }}</th>{% endfor %}</tr></thead>
+  <tbody>
+  {% for r in t.rows %}<tr{% if r.total %} class="total"{% endif %}>{% for c in r.cells %}<td>{{ c }}</td>{% endfor %}</tr>
+  {% endfor %}
+  </tbody>
+</table></div>
+{%- endmacro -%}
+{%- macro chart(c) -%}
+<div class="chart{% if c.wide %} wide{% endif %}">
+  <div class="ctitle">{{ c.title }}</div><div class="csub">{{ c.sub }}</div>
+  {{ c.html | safe }}
+</div>
+{%- endmacro -%}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ client.client_name }} – {{ month_label }} performance report</title>
+<style>
+{{ css | safe }}
+:root { --accent: {{ accent }}; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><div class="top-inner">
+  <div class="brand"><div class="logo">{{ client.agency_logo_text }}</div><div class="agency">{{ client.agency_name }}</div></div>
+  <div class="title"><h1>{{ client.client_name }}</h1><div class="sub">Monthly performance report · {{ month_label }}</div></div>
+</div></header>
+
+<section class="first">
+  <div class="sec-head"><span class="sec-num">01</span><h2>Executive summary</h2></div>
+  <p class="lede">{{ month_label }} compared with {{ prev_label }}.</p>
+  <div class="tiles">
+  {% for k in kpis %}
+    <div class="tile"><div class="label">{{ k.label }}</div><div class="value">{{ k.value }}</div>
+      {% if k.delta %}<span class="chip {{ k.delta.cls }}">{{ k.delta.arrow }} {{ k.delta.text }}</span><span class="vs">vs {{ prev_label }}</span>
+      {% else %}<span class="vs">No prior month to compare</span>{% endif %}
+    </div>
+  {% endfor %}
+  </div>
+  <div class="commentary">{% for p in commentary %}<p>{{ p }}</p>{% endfor %}</div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-num">02</span><h2>Paid media overview</h2></div>
+  <p class="lede">Google Ads and Meta Ads combined, day by day.</p>
+  <div class="charts">{% for c in paid_charts %}{{ chart(c) }}{% endfor %}</div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-num">03</span><h2>Google Ads campaigns</h2></div>
+  <p class="lede">Campaign performance for {{ month_label }}. Conversions are as counted by Google Ads.</p>
+  {% if tables.google_ads %}{{ table(tables.google_ads) }}{% else %}<p class="note">No Google Ads activity this month.</p>{% endif %}
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-num">04</span><h2>Meta Ads campaigns</h2></div>
+  <p class="lede">Campaign performance for {{ month_label }}. Conversions are as counted by Meta.</p>
+  {% if tables.meta_ads %}{{ table(tables.meta_ads) }}{% else %}<p class="note">No Meta Ads activity this month.</p>{% endif %}
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-num">05</span><h2>Website traffic</h2></div>
+  <p class="lede">Google Analytics sessions by channel.</p>
+  {% if web %}
+  <div class="charts"><div class="chart wide"><div class="ctitle">Sessions by channel</div><div class="csub">{{ month_label }}</div>{{ web.chart | safe }}</div></div>
+  <h3>Channel detail</h3>
+  {{ table(web) }}
+  {% else %}<p class="note">No website data for this month.</p>{% endif %}
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-num">06</span><h2>Organic search</h2></div>
+  <p class="lede">Google Search Console: what people searched for before finding the site.</p>
+  {% if seo %}
+  <div class="charts">{% for c in seo.charts %}{{ chart(c) }}{% endfor %}</div>
+  <h3>Top 10 queries by clicks</h3>
+  {{ table(seo) }}
+  {% else %}<p class="note">No search data for this month.</p>{% endif %}
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-num">07</span><h2>Data quality</h2></div>
+  <p class="lede">Ad platforms and Google Analytics should broadly agree. When they do not, the report tells you why.</p>
+  <div class="charts">{% for c in recon %}{{ chart(c) }}{% endfor %}</div>
+  <p class="note">Ad platforms count clicks; Google Analytics counts sessions. Some gap is normal (blocked scripts, people leaving before the page loads), so the two are never expected to match exactly.</p>
+  {% if alerts %}
+    {% for a in alerts %}
+    <div class="alert {{ a.severity }}">
+      <div class="sev">{{ a.severity }} · {{ a.period }}</div>
+      <h4>{{ a.title }}</h4>
+      <p>{{ a.message }}</p>
+      <p class="meta">{{ a.why }}</p>
+    </div>
+    {% endfor %}
+  {% else %}
+    <div class="status ok"><div class="dot">✓</div><div><strong>All checks passed.</strong><br>Data from every source is up to date, tracking is recording traffic, and ad clicks reconcile with website sessions.</div></div>
+  {% endif %}
+</section>
+
+<footer><span>Prepared by {{ client.agency_name }} for {{ client.client_name }}</span><span>Sources: Google Ads, Meta Ads, Google Analytics 4, Google Search Console</span></footer>
+</div>
+</body>
+</html>
