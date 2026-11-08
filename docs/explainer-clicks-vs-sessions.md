@@ -65,7 +65,7 @@ The monitoring command (`agency-pipeline check`) looks at the last 14 days, grou
 
 ## Worked example: bluepeak-dental
 
-The repository includes three synthetic clients. Bluepeak Dental is built to reproduce the problem in this article: auto-tagging is effectively broken. Google Ads reports about 1,691 clicks in the period; GA4 attributes only about 298 sessions to google / cpc, a ratio of roughly 18%.
+The repository includes three synthetic clients. Bluepeak Dental is built to reproduce the problem in this article: auto-tagging is effectively broken. In October 2026 Google Ads reports 1,759 clicks; GA4 attributes only 309 sessions to google / cpc, a ratio of roughly 18%: almost exactly the screenshot above.
 
 The pipeline result for this client:
 

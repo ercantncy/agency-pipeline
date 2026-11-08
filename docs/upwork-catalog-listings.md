@@ -124,7 +124,7 @@ Record one per job. Total length 75 to 90 seconds. Open their actual report or s
 
 1. (0:00 - 0:10) "Hi [First name], I saw your post about [specific problem from the job post]. I'm [Your Name]. I build reporting pipelines for agencies."
 2. (0:10 - 0:35) Show something specific from their world: their public site, a sample of their report style, or their stated tool stack. "From what you described, you pull [sources] into [tool], and I'd guess [specific pain, e.g. numbers differ between Ads and GA4]."
-3. (0:35 - 1:05) Show the demo for 30 seconds: the reconciliation or data quality page. "This is a synthetic client where Google Ads shows 1,691 clicks and GA4 298 sessions. The pipeline flags it automatically and explains it in plain English."
+3. (0:35 - 1:05) Show the demo for 30 seconds: the reconciliation or data quality page. "This is a synthetic client where Google Ads shows 1,759 clicks and GA4 309 sessions. The pipeline flags it automatically and explains it in plain English."
 4. (1:05 - 1:25) Propose the first step: "I'd start with a $149/$349 audit so you know what's broken. Or if you already know, we scope the setup."
 5. (1:25 - 1:30) "Link to the demo is below. Happy to answer anything here."
 
@@ -138,7 +138,7 @@ Rules: use their name; never reuse a Loom; no screen of anything that is not syn
 >
 > What I would do: [1 sentence on the first step, usually the audit]. Fixed price [$X], delivered in [N] days. You would get [deliverable].
 >
-> A 90-second walkthrough aimed at your situation: [Loom link]. A working demo with synthetic data: [repo link].
+> A 90-second walkthrough aimed at your situation: [Loom link]. A working demo with synthetic data: https://github.com/ercantncy/agency-pipeline (live demo: https://ercantncy.github.io/agency-pipeline/).
 >
 > One question: [specific scoping question, e.g. which platforms and how many clients?]
 >

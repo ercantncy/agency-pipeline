@@ -175,5 +175,18 @@ def run(
         raise typer.Exit(code=exit_code)
 
 
+@app.command()
+def site(
+    month: str = typer.Option(DEFAULT_MONTH, help="Report month, YYYY-MM."),
+) -> None:
+    """Bundle the month's reports and an index page into output/site (for GitHub Pages)."""
+    from agency_pipeline.site import build_site
+
+    index = build_site(
+        config.OUTPUT_DIR / "reports", config.OUTPUT_DIR / "site", _parse_month(month)
+    )
+    console.print(f"wrote {index.relative_to(config.PROJECT_ROOT)}")
+
+
 if __name__ == "__main__":
     app()

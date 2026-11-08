@@ -64,3 +64,17 @@ def test_northwind_has_no_critical_alert(reports):
     assert 'class="alert critical"' not in html
     assert "All checks passed" in html
     assert "$" in html
+
+
+def test_site_bundles_reports(tmp_path):
+    from agency_pipeline.site import build_site
+
+    month = date(2026, 10, 1)
+    reports = tmp_path / "reports"
+    for cid in ("northwind-outdoor", "bluepeak-dental", "harbor-coffee"):
+        (reports / cid).mkdir(parents=True)
+        (reports / cid / "2026-10.html").write_text("<html></html>")
+    index = build_site(reports, tmp_path / "site", month)
+    text = index.read_text()
+    assert "reports/bluepeak-dental-2026-10.html" in text
+    assert (tmp_path / "site" / "reports" / "harbor-coffee-2026-10.html").exists()

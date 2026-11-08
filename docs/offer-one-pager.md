@@ -111,7 +111,7 @@ Not necessarily. Some agencies keep it for client-facing graphs and use the ware
 BigQuery's free tier typically covers small-agency volumes, and Looker Studio is free (Pro is per user). Verify your expected usage during scoping; any paid connector costs are passed through at cost.
 
 **Can I see a working example?**
-Yes. A reference implementation with three synthetic clients, including a broken-tracking case, is on GitHub: [repo link]. A 5-minute Loom walkthrough is here: [Loom link].
+Yes. A reference implementation with three synthetic clients, including a broken-tracking case, is on GitHub: https://github.com/ercantncy/agency-pipeline (live demo: https://ercantncy.github.io/agency-pipeline/). A 5-minute Loom walkthrough is here: [Loom link].
 
 ## How to start
 

@@ -4,6 +4,8 @@
 
 If your team spends 20 to 30 hours per client per month pulling exports, reconciling Google Ads against GA4, formatting decks and writing commentary, most of that time is mechanical. This repository is a working reference implementation of the pipeline that removes it: sources land in a warehouse, dbt models turn them into trusted marts, monitoring catches broken tracking before your client does, and each client gets a branded report with plain-English commentary. It runs end to end on synthetic data with one command; in production the same dbt project runs on BigQuery with a Looker Studio front end.
 
+**Live demo:** [ercantncy.github.io/agency-pipeline](https://ercantncy.github.io/agency-pipeline/) (October 2026 reports for three synthetic clients, rebuilt by CI on every push).
+
 ## Architecture
 
 ```mermaid
@@ -34,7 +36,7 @@ uv run agency-pipeline run          # extract-load -> transform -> check -> repo
 open output/reports/bluepeak-dental/2026-10.html
 ```
 
-Individual stages: `extract-load`, `transform`, `check [--json]`, `report --client <id|all> --month YYYY-MM [--no-llm]`. `run` always builds the reports, then exits with code 1 if any critical alert is open.
+Individual stages: `extract-load`, `transform`, `check [--json]`, `report --client <id|all> --month YYYY-MM [--no-llm]`, and `site` (bundles the reports with an index page into `output/site` for GitHub Pages). `run` always builds the reports, then exits with code 1 if any critical alert is open.
 
 ## Three synthetic clients, three scenarios
 
