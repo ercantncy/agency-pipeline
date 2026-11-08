@@ -30,7 +30,7 @@ The tell: organic and direct look suspiciously good while paid looks like it und
 
 I wrote up the full diagnosis checklist and built a check that flags it daily (warn below 50%, critical below 30%).
 
-Article and a synthetic demo: [link]
+Article and a synthetic demo: https://github.com/ercantncy/agency-pipeline/blob/master/docs/explainer-clicks-vs-sessions.md · https://ercantncy.github.io/agency-pipeline/
 
 ---
 
@@ -49,7 +49,7 @@ A pipeline will not remove every hour. But if it removes a quarter of them, that
 
 I build this for 5-25 person PPC and SEO agencies, fixed price. If you want to run the math on your own numbers, send me your client count and I will do it with you.
 
-[Calendly link]
+https://calendly.com/example/20min
 
 ---
 
@@ -65,7 +65,7 @@ Boring. Also the reason a duplicated load or a source schema change fails in a p
 
 A dashboard is only as trustworthy as the model under it. Most "the numbers are wrong" conversations are really "nobody tested the join."
 
-The repo is public, with synthetic clients and the tests included: [link]
+The repo is public, with synthetic clients and the tests included: https://github.com/ercantncy/agency-pipeline
 
 ---
 
@@ -83,7 +83,7 @@ A cleaner setup is a warehouse you own, tests that catch the break, and a templa
 
 Fixed price setup, from $1,500. Audit first, from $149, if you want to know where you stand.
 
-[Calendly link]
+https://calendly.com/example/20min
 
 ---
 
@@ -106,7 +106,7 @@ So the useful metric is not the ratio. It is the ratio over time, per channel, w
 
 I check it daily across clients and alert on consecutive bad days. One bad day is noise. Three in a row is a ticket.
 
-Demo on synthetic data: [link]
+Demo on synthetic data: https://ercantncy.github.io/agency-pipeline/
 
 ---
 
@@ -122,7 +122,7 @@ The ones whose accounts do have a problem usually want it fixed, and then want i
 
 I would rather earn trust at a small price than ask for a big one before I have shown anything.
 
-Details: [link]
+Details: https://github.com/ercantncy/agency-pipeline/blob/master/docs/offer-one-pager.md
 
 ---
 
@@ -138,7 +138,7 @@ Why not one dataset per client? Because then every model and every permission is
 
 The one thing to be careful about: a drop-down filter alone does not secure client data. Lock the filter, or use separate copies or views for client-facing links.
 
-Setup guide: [link]
+Setup guide: https://github.com/ercantncy/agency-pipeline/blob/master/docs/looker-studio-setup.md
 
 ---
 
@@ -154,4 +154,4 @@ My version: $1,500 to $3,000 a month depending on how many client dashboards. 48
 
 If the pipeline does its job, most months nothing happens. That is the point. You are paying for the month it would have.
 
-[Calendly link]
+https://calendly.com/example/20min

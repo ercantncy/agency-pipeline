@@ -2,7 +2,7 @@
 
 **Client reporting infrastructure for PPC, SEO and paid-social agencies. BigQuery + Looker Studio. No meetings.**
 
-Prepared by [Your Name] · [your-email] · [Calendly link]
+Prepared by Ercan Tuncay · hello@example.com · https://calendly.com/example/20min
 
 ---
 
@@ -111,12 +111,12 @@ Not necessarily. Some agencies keep it for client-facing graphs and use the ware
 BigQuery's free tier typically covers small-agency volumes, and Looker Studio is free (Pro is per user). Verify your expected usage during scoping; any paid connector costs are passed through at cost.
 
 **Can I see a working example?**
-Yes. A reference implementation with three synthetic clients, including a broken-tracking case, is on GitHub: https://github.com/ercantncy/agency-pipeline (live demo: https://ercantncy.github.io/agency-pipeline/). A 5-minute Loom walkthrough is here: [Loom link].
+Yes. A reference implementation with three synthetic clients, including a broken-tracking case, is on GitHub: https://github.com/ercantncy/agency-pipeline (live demo: https://ercantncy.github.io/agency-pipeline/). A 5-minute Loom walkthrough is here: https://www.loom.com/share/example-walkthrough.
 
 ## How to start
 
-1. Book a 20-minute call: [Calendly link]. Or reply with the number of clients you report on and which platforms you use.
+1. Book a 20-minute call: https://calendly.com/example/20min. Or reply with the number of clients you report on and which platforms you use.
 2. Start with the audit ($149 or $349). It is fixed-price, takes 3 days, and the fee is credited toward a Setup if you proceed within 30 days. [Confirm this policy before publishing.]
 3. If the audit shows a pipeline would pay off, we scope the Setup and agree a fixed price in writing.
 
-[Your Name] · [your-email] · [Calendly link] · [LinkedIn URL]
+Ercan Tuncay · hello@example.com · https://calendly.com/example/20min · https://www.linkedin.com/in/example

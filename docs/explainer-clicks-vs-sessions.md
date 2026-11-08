@@ -83,4 +83,4 @@ All data in the repository is synthetic and deterministic. The figures illustrat
 
 A moderate gap between clicks and sessions is expected and explainable. A large or sudden gap is a defect in measurement, not in advertising, and it distorts every downstream number: channel mix, cost per acquisition, and the story you tell the client. Measuring the ratio daily and alerting on it turns a quarterly surprise into a same-week fix.
 
-If you suspect this is happening in your accounts, a fixed-price Tracking & Reporting Audit ($149 or $349, 3 days) will tell you. [Calendly link]
+If you suspect this is happening in your accounts, a fixed-price Tracking & Reporting Audit ($149 or $349, 3 days) will tell you. https://calendly.com/example/20min

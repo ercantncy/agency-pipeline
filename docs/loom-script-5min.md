@@ -12,7 +12,7 @@ Spoken text is in quotes. Actions are in brackets.
 
 [Show the Bluepeak Dental report, data quality page, on screen.]
 
-"Hi, I'm [Your Name]. This is a sample report for a dental client. Google Ads says 1,759 clicks. GA4 says 309 sessions. If you run an agency, you've probably had that conversation with a client. The next five minutes show how I set up a reporting pipeline that catches this automatically, and how it saves you the hours you spend on reporting every month. The data here is synthetic, so no real client is shown."
+"Hi, I'm Ercan Tuncay. This is a sample report for a dental client. Google Ads says 1,759 clicks. GA4 says 309 sessions. If you run an agency, you've probably had that conversation with a client. The next five minutes show how I set up a reporting pipeline that catches this automatically, and how it saves you the hours you spend on reporting every month. The data here is synthetic, so no real client is shown."
 
 **0:30 - 1:15 | The problem in hours**
 
@@ -62,5 +62,5 @@ Spoken text is in quotes. Actions are in brackets.
 
 - Keep it under 5:15. Cut the live transform run if it is slow and show the pre-run output.
 - Do not show real client names, ad account IDs or API keys. Everything shown must be synthetic.
-- Add the repo link, the explainer link and [Calendly link] in the Loom description.
+- Add the repo link, the explainer link and https://calendly.com/example/20min in the Loom description.
 - Title: "Reporting pipeline for agencies: 5-minute walkthrough".
